@@ -1,0 +1,45 @@
+# SPDX-License-Identifier: CC0-1.0
+# The version field records the planned first public release, v0.1.0; it does
+# not assert that the release exists. The repository is access-restricted;
+# no public release date is asserted.
+# DOI fields are intentionally absent from this software-release plan.
+cff-version: 1.2.0
+message: "If you use this software corpus, please cite it as below."
+title: "Buddhist and Comparative Asian Logic Formalizations"
+type: software
+repository-code: "https://github.com/takuya50/buddhist-comparative-logic"
+license: Apache-2.0
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+abstract: >-
+  Machine-checked formalizations of Buddhist and comparative Asian logic in
+  Lean 4 and Isabelle/HOL. The Heart Sutra is one case study: its
+  Isabelle session formalizes a project-adopted 262-character received witness
+  of the Xuanzang-attributed text, with manually documented statement-level
+  correspondence to selected Lean 4 definitions and results, not a verified
+  cross-foundational translation. The code repository is currently private
+  and is not accessible to readers without authorization.
+  The shared logical layer compares classical logic, Belnap-Dunn
+  first-degree entailment, and Priest's five-valued semantics. Lean extensions
+  give bounded proof interfaces and countermodels for Madhyamaka, Buddhist
+  epistemology, Yogacara, and selected comparative Asian traditions. The
+  historical modules expose their assumptions and are described as modern
+  reconstructions unless a passage-level alignment is recorded; the project
+  does not assert the truth of a doctrine or a uniquely correct reading.
+authors:
+  - family-names: Ariake
+    given-names: Nimble
+    orcid: "https://orcid.org/0009-0008-2838-6626"
+keywords:
+  - Isabelle/HOL
+  - formalization
+  - Buddhist logic
+  - Madhyamaka
+  - "catuskoti"
+  - Heart Sutra
+  - first-degree entailment
+  - paraconsistent logic
+  - plurivalent logic
+  - containment logic
+  - Lean 4
+  - comparative philosophy
+version: "0.1.0"

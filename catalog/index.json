@@ -1,0 +1,1018 @@
+{
+  "schema": 3,
+  "work": "Prajnaparamitahrdaya, Xuanzang's short recension (T251)",
+  "isabelle_session": "Buddhist_Comparative_Logic",
+  "theories": [
+    "HeartSutra_Text",
+    "HeartSutra_Dharma",
+    "ManyValuedLogic",
+    "Dignaga_Hetucakra",
+    "Yogacara_Vimsatika",
+    "Sarvastivada_ThreeTimes",
+    "Madhyamaka_Gamana",
+    "FiniteLogics",
+    "Dharmakirti_Reasons",
+    "Dignaga_Apoha",
+    "Catuskoti",
+    "HeartSutra_Mantra",
+    "HeartSutra_Connexive",
+    "Madhyamaka_Jizang",
+    "Madhyamaka_MMK1",
+    "HeartSutra_Emptiness",
+    "PlurivalentSemantics",
+    "Jaina_Saptabhangi",
+    "ManyValuedLogicExample",
+    "HeartSutra_Path",
+    "Madhyamaka_MMK24",
+    "UniversalDesignation",
+    "FiniteDecisionProcedures",
+    "HeartSutra_Coverage",
+    "HeartSutra_TwoTruths",
+    "UniversalDesignationFDE",
+    "HeartSutra_PathModel",
+    "HeartSutra_Anumana",
+    "Avyakata",
+    "FDEProofTheory",
+    "DiamondSutra_Sokuhi",
+    "HeartSutra_Sanskrit",
+    "Madhyamaka_StandpointSemantics",
+    "Madhyamaka_Vigrahavyavartani",
+    "HeartSutra_LongerRecension"
+  ],
+  "clauses": [
+    {
+      "id": "HS00",
+      "text": "般若波羅蜜多心經",
+      "characters": 8,
+      "theorems": [
+        "HeartSutra_Text.clause.HS00"
+      ],
+      "evidence_label": "isabelle-definition",
+      "coverage_status": "Defined",
+      "logic_dependence": "none",
+      "note": "title, outside the 262-character body"
+    },
+    {
+      "id": "HS01",
+      "text": "觀自在菩薩",
+      "characters": 5,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs01_04_avalokitesvara"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "names Avalokiteśvara as the subject"
+    },
+    {
+      "id": "HS02",
+      "text": "行深般若波羅蜜多時",
+      "characters": 9,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs21_22_chain",
+        "hs02"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "\"practising deep prajnaparamita\" formalized as `relies_prajna`"
+    },
+    {
+      "id": "HS03",
+      "text": "照見五蘊皆空",
+      "characters": 6,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs03_skandhas"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "all 5 skandhas are `empty_of`"
+    },
+    {
+      "id": "HS04",
+      "text": "度一切苦厄",
+      "characters": 5,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs01_04_avalokitesvara"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "\"crossed over all suffering\""
+    },
+    {
+      "id": "HS05",
+      "text": "舍利子",
+      "characters": 3,
+      "theorems": [
+        "HeartSutra_Text.speaker"
+      ],
+      "evidence_label": "isabelle-definition",
+      "coverage_status": "Defined",
+      "logic_dependence": "none",
+      "note": "addressee Śāriputra"
+    },
+    {
+      "id": "HS06",
+      "text": "色不異空 空不異色",
+      "characters": 8,
+      "theorems": [
+        "HeartSutra_Emptiness.fde_R_identity_not_notsep",
+        "HeartSutra_Emptiness.fde_R_mutual_not_identity",
+        "HeartSutra_Emptiness.cl_emptiness.cl_readings_coincide"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "classical readings coincide; under FDE value-identity does not entail \"not different from\", and mutual implication does not entail value-identity",
+      "note": "three candidate readings compared, see below"
+    },
+    {
+      "id": "HS07",
+      "text": "色即是空 空即是色",
+      "characters": 8,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs07_R_mutual"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none (holds in every instance via `samvrti`)",
+      "note": "mutual-implication reading"
+    },
+    {
+      "id": "HS08",
+      "text": "受想行識 亦復如是",
+      "characters": 8,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs08_generalize"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "generalizes HS07 to all five skandhas"
+    },
+    {
+      "id": "HS09",
+      "text": "舍利子 是諸法空相",
+      "characters": 8,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs11_18_enumeration"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "\"all dharmas are marked with emptiness\" — the 65-dharma enumeration"
+    },
+    {
+      "id": "HS10",
+      "text": "不生不滅 不垢不淨 不增不減",
+      "characters": 12,
+      "theorems": [
+        "HeartSutra_Emptiness.hs10_fde_formula_iff_B",
+        "HeartSutra_Emptiness.hs10_fde_neither_iff_N"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "classically unsatisfiable; FDE: formula-level reading holds iff the atom is `B` (glut), designation-level \"neither\" reading holds iff it is `N` (gap) — these are different and both are stated",
+      "note": "see wording rule above: do not conflate (a) and (b)"
+    },
+    {
+      "id": "HS11",
+      "text": "是故空中無色 無受想行識",
+      "characters": 11,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs11_18_enumeration"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "skandhas restated within \"in emptiness\""
+    },
+    {
+      "id": "HS12",
+      "text": "無眼耳鼻舌身意",
+      "characters": 7,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs11_18_enumeration"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "six `indriya`"
+    },
+    {
+      "id": "HS13",
+      "text": "無色聲香味觸法",
+      "characters": 7,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs11_18_enumeration"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "six `visaya`"
+    },
+    {
+      "id": "HS14",
+      "text": "無眼界 乃至無意識界",
+      "characters": 9,
+      "theorems": [
+        "HeartSutra_Dharma.dhatu_naishi",
+        "HeartSutra_Emptiness.emptiness.hs11_18_enumeration"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "the elided 十八界 list is exhaustive with the stated first/last member"
+    },
+    {
+      "id": "HS15",
+      "text": "無無明 亦無無明盡",
+      "characters": 8,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs15_16_chain_and_cessation"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "both the nidāna and its cessation lack own-being"
+    },
+    {
+      "id": "HS16",
+      "text": "乃至無老死 亦無老死盡",
+      "characters": 10,
+      "theorems": [
+        "HeartSutra_Dharma.pratiloma_naishi",
+        "HeartSutra_Emptiness.emptiness.hs15_16_chain_and_cessation"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "elided cessation chain, exhaustive, reversed order"
+    },
+    {
+      "id": "HS17",
+      "text": "無苦集滅道",
+      "characters": 5,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs11_18_enumeration"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "four truths"
+    },
+    {
+      "id": "HS18",
+      "text": "無智亦無得",
+      "characters": 5,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs19_no_attainment"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "`Jnana` (knowledge) alongside `Prapti`"
+    },
+    {
+      "id": "HS19",
+      "text": "以無所得故",
+      "characters": 5,
+      "theorems": [
+        "HeartSutra_Emptiness.emptiness.hs19_no_attainment"
+      ],
+      "evidence_label": "isabelle-theorem",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "\"because there is nothing to attain\""
+    },
+    {
+      "id": "HS20",
+      "text": "菩提薩埵 依般若波羅蜜多故",
+      "characters": 12,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs21_22_chain",
+        "hs20_21a"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": ""
+    },
+    {
+      "id": "HS21",
+      "text": "心無罣礙 無罣礙故 無有恐怖",
+      "characters": 12,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs21_22_chain"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": ""
+    },
+    {
+      "id": "HS22",
+      "text": "遠離一切顛倒夢想 究竟涅槃",
+      "characters": 12,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs21_22_chain"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": ""
+    },
+    {
+      "id": "HS23",
+      "text": "三世諸佛 依般若波羅蜜多故",
+      "characters": 12,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs23_24_three_times"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "quantifies over all three `kala`"
+    },
+    {
+      "id": "HS24",
+      "text": "得阿耨多羅三藐三菩提",
+      "characters": 10,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs23_24_three_times"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "`bodhi`"
+    },
+    {
+      "id": "HS25",
+      "text": "故知般若波羅蜜多 是大神咒 是大明咒 是無上咒 是無等等咒",
+      "characters": 25,
+      "theorems": [
+        "HeartSutra_Mantra.epithets_four"
+      ],
+      "evidence_label": "isabelle-definition",
+      "coverage_status": "Defined",
+      "logic_dependence": "none",
+      "note": "four epithets counted, not evaluated for truth"
+    },
+    {
+      "id": "HS26",
+      "text": "能除一切苦",
+      "characters": 5,
+      "theorems": [
+        "HeartSutra_Path.bodhisattva_path.hs04_26",
+        "hs21_22_chain"
+      ],
+      "evidence_label": "isabelle-theorem (definitional)",
+      "coverage_status": "Proved",
+      "logic_dependence": "none",
+      "note": "the one propositional residue of HS25–29"
+    },
+    {
+      "id": "HS27",
+      "text": "真實不虛",
+      "characters": 4,
+      "theorems": [
+        "HeartSutra_Mantra.hs29_mantra_not_truth_apt"
+      ],
+      "evidence_label": "noted",
+      "coverage_status": "Noted",
+      "logic_dependence": "none",
+      "note": "asserts truth of an invocation; `truthful ≠ provable` — neither asserted nor denied here"
+    },
+    {
+      "id": "HS28",
+      "text": "故說般若波羅蜜多咒 即說咒曰",
+      "characters": 13,
+      "theorems": [
+        "HeartSutra_Mantra.heart_mantra_shape"
+      ],
+      "evidence_label": "noted",
+      "coverage_status": "Noted",
+      "logic_dependence": "none",
+      "note": "performative (\"thus we say the mantra\")"
+    },
+    {
+      "id": "HS29",
+      "text": "揭諦揭諦 波羅揭諦 波羅僧揭諦 菩提薩婆訶",
+      "characters": 18,
+      "theorems": [
+        "HeartSutra_Mantra.heart_mantra_shape",
+        "HeartSutra_Mantra.hs29_mantra_not_truth_apt"
+      ],
+      "evidence_label": "noted",
+      "coverage_status": "Noted",
+      "logic_dependence": "none",
+      "note": "invocation, not a declarative sentence"
+    },
+    {
+      "id": "HS30",
+      "text": "般若心經",
+      "characters": 4,
+      "theorems": [
+        "HeartSutra_Text.clause.HS30"
+      ],
+      "evidence_label": "isabelle-definition",
+      "coverage_status": "Defined",
+      "logic_dependence": "none",
+      "note": "colophon, outside the 262-character body"
+    }
+  ],
+  "body_clauses": 29,
+  "body_characters": 262,
+  "extensions": [
+    {
+      "theory": "Madhyamaka_MMK24",
+      "question": "Can the emptiness axiom (`mmk_24_18`) be derived rather than assumed?",
+      "theorems": [
+        "mmk_24_18_derived",
+        "madhyamaka",
+        "emptiness",
+        "prajnapti",
+        "madhyama"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem"
+      ]
+    },
+    {
+      "theory": "Madhyamaka_MMK24",
+      "question": "Is the middle way logic-dependent?",
+      "theorems": [
+        "cl_madhyama",
+        "fde_madhyama_iff_consistent",
+        "fde_glut_defeats_middle_way"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "HeartSutra_TwoTruths",
+      "question": "Does the two-truths semantics (世俗諦 / 勝義諦 as two evaluation points) recover HS06 under FDE?",
+      "theorems": [
+        "hs06_two_truths",
+        "two_truths_readings_coincide",
+        "ult_glut_breaks_hs06",
+        "conv_glut_breaks_hs06",
+        "emptiness"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "PlurivalentSemantics",
+      "question": "Where does Priest's fifth value come from, and does \"plurivalent classical logic = FDE\" depend on how the connectives are lifted?",
+      "theorems": [
+        "fde5_is_singleton_fragment",
+        "fde5_sat_is_fde_psat",
+        "image_plurivalent_classical_is_fde5",
+        "image_plurivalent_classical_has_no_gap",
+        "relational_plurivalent_classical_is_fde",
+        "nonempty_agree",
+        "image_vs_relational",
+        "pkoti_sing",
+        "fifth_corner_is_valueless"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem"
+      ]
+    },
+    {
+      "theory": "HeartSutra_Connexive",
+      "question": "Is there a reading of 不生不滅 that needs neither glut nor gap?",
+      "theorems": [
+        "hs10_connexive_bivalent",
+        "hs10_material_bivalent_unsat",
+        "aristotle_connexive",
+        "boethius_connexive",
+        "aristotle_fails_material"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Dignaga_Hetucakra",
+      "question": "(independent) Dignāga's nine reasons and the three marks",
+      "theorems": [
+        "wheel_valid_iff",
+        "vyatireka_gives_vyapti_off_paksa",
+        "no_deductive_soundness",
+        "sound_under_uniformity"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "UniversalDesignation",
+      "question": "General plurivalence under *universal* designation (\"designated iff all values are designated\"), classical base, as discussed by Priest (2014, appendix).",
+      "theorems": [
+        "cl_upsat_matrix",
+        "cl_upentails_matrix",
+        "ud_variable_inclusion",
+        "priest_open_question_classical",
+        "priest_witness_is_not_a_countermodel"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "DiamondSutra_Sokuhi",
+      "question": "The Diamond Sutra's 即非の論理 (「X者 即非X 是名X」, 16 instances in T235 listed): which reading makes the schema consistent?",
+      "theorems": [
+        "sokuhi_classical_unsat",
+        "sokuhi_fde_iff_glut",
+        "sokuhi_fde5_iff_glut",
+        "sokuhi_connexive_forces_glut",
+        "zemyo_holds",
+        "sokuhi_bivalent",
+        "sokuhi_no_contradiction",
+        "zemyo_needs_hi"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Madhyamaka_Jizang",
+      "question": "Jizang's 四重二諦: can a truth-functional semantics distinguish the four tiers?",
+      "theorems": [
+        "jz_cl_conv_valid",
+        "jz_cl_ult_unsat",
+        "jz_fde_stabilizes",
+        "jz_fde_fixed_points",
+        "jz_fde5_ineffable_fixed_point",
+        "jz_neither_stabilizes",
+        "jizang_ladder_is_not_truth_functional"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem"
+      ]
+    },
+    {
+      "theory": "UniversalDesignationFDE",
+      "question": "How does the universal-designation characterization depend on the base logic?",
+      "theorems": [
+        "mv_logic",
+        "upentails_variable_inclusion",
+        "theta_designated",
+        "theta_hom_conj",
+        "theta_hom_disj",
+        "theta_hom_neg",
+        "pos_up_fde_is_fde",
+        "priest_open_question_fde",
+        "fde_up_conj_elim_fails",
+        "fde_up_disj_intro"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem"
+      ]
+    },
+    {
+      "theory": "HeartSutra_Sanskrit",
+      "question": "The Sanskrit recension: three formulations of HS06-07 and Attwood's *māyopama* variant",
+      "theorems": [
+        "R_identity",
+        "R_mutual",
+        "R_notsep",
+        "cl_four_readings_coincide",
+        "R_maya",
+        "fde_maya_iff_sv_F",
+        "fde_maya_consistent_coincide",
+        "fde_maya_not_notsep",
+        "ku_soku_ze_shiki_iff_samvrti",
+        "rabbit_horn"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "HeartSutra_PathModel",
+      "question": "Can the path chain (HS20–26) be derived rather than assumed?",
+      "theorems": [
+        "bodhisattva_path",
+        "derived_chain",
+        "chain_converses",
+        "nirvana_without_prajna"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem (definitional)"
+      ]
+    },
+    {
+      "theory": "HeartSutra_Anumana",
+      "question": "\"All dharmas are empty because dependently arisen\" as a Dignāga inference",
+      "theorems": [
+        "madhyamaka",
+        "sunyata_anumana_valid",
+        "uniformity_trivial",
+        "bhavaviveka_valid",
+        "no_agreed_example_contradictory"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Madhyamaka_MMK1",
+      "question": "MMK 1:1, the four-fold non-arising, as a prasaṅga",
+      "theorems": [
+        "catuh_utpada_cl",
+        "anutpada_fde_formula",
+        "anutpada_fde_designation_fails",
+        "fde_mt_fails"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "FiniteDecisionProcedures",
+      "question": "Executable decision procedures for the three-atom fragment",
+      "theorems": [
+        "all_vals_UNIV"
+      ],
+      "evidence_labels": [
+        "isabelle-executable"
+      ]
+    },
+    {
+      "theory": "Dharmakirti_Reasons",
+      "question": "Dharmakīrti's three kinds of reason: where does the inductive premise sit?",
+      "theorems": [
+        "vyapti_sound",
+        "marks_without_vyapti",
+        "svabhavahetu_vyapti",
+        "simsapa_tree",
+        "karyahetu_needs_causal_law",
+        "drsyanupalabdhi_sound",
+        "anupalabdhi_needs_perceptibility"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Avyakata",
+      "question": "The fourteen unanswered questions as four-corner rejection",
+      "theorems": [
+        "rejection_formula_fde",
+        "rejection_formula_fde5",
+        "rejection_designation_fde5",
+        "rejection_is_K4_fde5",
+        "silence_gap_or_ineffable",
+        "silence_is_assent_under_universal_designation",
+        "silence_is_gap_under_existential_designation"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Madhyamaka_StandpointSemantics",
+      "question": "A non-truth-functional semantics for the two truths and their iterations (positive complement to `Madhyamaka_Jizang`)",
+      "theorems": [
+        "two_truths_fde",
+        "two_points_is_two_truths",
+        "jizang_tiers_separated",
+        "each_tier_denied",
+        "final_silence",
+        "separation_beyond_values",
+        "yuanrong_no_ultimate_denial",
+        "gereki_hierarchical",
+        "prasangika_no_thesis",
+        "prasangika_mp_closed"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-definition"
+      ]
+    },
+    {
+      "theory": "Madhyamaka_Vigrahavyavartani",
+      "question": "The Vigrahavyāvartanī: emptiness of the statement of emptiness, and \"I have no thesis\"",
+      "theorems": [
+        "sunyata_sunyata",
+        "opponent_premise_self_refuting",
+        "opponent_premise_kills_objection",
+        "nagarjuna_reply",
+        "vv_fde_glut",
+        "vv_fde_glut_model",
+        "no_thesis_consistent"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "FDEProofTheory",
+      "question": "Proof theory for FDE and FDE5 beyond the three-atom fragment",
+      "theorems": [
+        "fde_variable_sharing",
+        "sharing_not_sufficient",
+        "fde_no_valid_formula",
+        "fde5_no_valid_formula",
+        "fde5_is_fde_plus_containment",
+        "expandl_correct",
+        "open_sat",
+        "fde_dec_correct",
+        "fde5_dec_correct",
+        "decide_agree"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-executable"
+      ]
+    },
+    {
+      "theory": "HeartSutra_LongerRecension",
+      "question": "The longer recension: what the narrative frame adds",
+      "theorems": [
+        "only_answer_assertoric",
+        "core_unchanged",
+        "body_262",
+        "samadhi_realizes_no_thesis",
+        "endorsement_adds_nothing"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-definition"
+      ]
+    },
+    {
+      "theory": "Jaina_Saptabhangi",
+      "question": "(independent, non-Buddhist) The Jaina sevenfold predication: can seven modes be seven truth values?",
+      "theorems": [
+        "avaktavya_absorbs",
+        "seven_modes_four_values",
+        "mixed_modes_unsatisfiable",
+        "fde5_saptabhangi_realizable_is_catuskoti",
+        "avaktavya_is_the_fourth_corner",
+        "fde5_koti_of_E",
+        "avaktavya_designated_is_a_glut",
+        "all_seven_satisfiable",
+        "saptabhangi_separated_by_naya",
+        "three_primitives_generate",
+        "naya_primitives_independent",
+        "mixed_modes_need_two_nayas",
+        "seventh_mode_needs_three_nayas",
+        "syat_is_indexical"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Dignaga_Apoha",
+      "question": "(independent) Dignaga's apoha and Kumarila's circularity objection: is the definition of a word as \"exclusion of the other\" viciously circular?",
+      "theorems": [
+        "apoha_no_fixpoint",
+        "apoha_pair_underdetermined",
+        "apoha_pair_no_constraint",
+        "circularity_is_underdetermination",
+        "revision_oscillates",
+        "revision_never_stabilises",
+        "revision_has_no_stable_set",
+        "causal_grounding_unique",
+        "grounding_needs_transitivity",
+        "grounding_selects_a_solution",
+        "vipaksa_is_apoha_of_sapaksa",
+        "sapaksa_vipaksa_partition",
+        "apoha_underdetermines_the_wheel"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Yogacara_Vimsatika",
+      "question": "(independent) Vasubandhu's *Vimsatika*: do the four conditions of verses 2-3 refute consciousness-only, and does the atomism refutation of verses 12-14 go through?",
+      "theorems": [
+        "dream_meets_three",
+        "dream_lacks_intersubjectivity",
+        "naraka_meets_all_four",
+        "vijnaptimatra_is_consistent_with_the_four_conditions",
+        "six_directions_collapse",
+        "atomism_dilemma",
+        "extension_needs_parts",
+        "dilemma_horns_are_both_realized"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Sarvastivada_ThreeTimes",
+      "question": "(independent) The four Vaibhasika accounts of what makes one of the three times present: which of them define a present at all?",
+      "theorems": [
+        "vasumitra_unique_present",
+        "vasumitra_total",
+        "dharmatrata_unique_present",
+        "dharmatrata_allows_change",
+        "dharmatrata_is_parinama",
+        "ghosaka_violates_uniqueness",
+        "buddhadeva_unique_given_relatum",
+        "buddhadeva_abs_violates_uniqueness",
+        "accounts_that_fail_uniqueness",
+        "karitra_must_be_extrinsic",
+        "no_change_without_extrinsic_condition"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    },
+    {
+      "theory": "Madhyamaka_Gamana",
+      "question": "(independent) MMK 2's threefold division of the path: is the trilemma exhaustive, and does it need a continuum?",
+      "theorems": [
+        "threefold_division_partitions",
+        "gamyamana_is_a_point",
+        "no_traversal_of_a_point",
+        "no_motion_in_gamyamana",
+        "motion_is_not_a_property_of_a_place",
+        "gone_and_not_gone_can_be_traversed",
+        "no_first_untraversed",
+        "goer_goes_is_empty",
+        "goer_goes_doubles"
+      ],
+      "evidence_labels": [
+        "isabelle-theorem",
+        "isabelle-countermodel"
+      ]
+    }
+  ],
+  "extension_results": 26,
+  "lean_port": {
+    "aggregate": "BuddhistComparativeLogic.lean",
+    "theory_units": 35,
+    "subject_modules": 34,
+    "mapping": [
+      {
+        "isabelle_theory": "HeartSutra_Text",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Text"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Dharma",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Dharma"
+      },
+      {
+        "isabelle_theory": "ManyValuedLogic",
+        "lean_module": "BuddhistComparativeLogic.Core.MVLogic"
+      },
+      {
+        "isabelle_theory": "Dignaga_Hetucakra",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Pramana.Hetucakra"
+      },
+      {
+        "isabelle_theory": "Yogacara_Vimsatika",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Yogacara.Vimsatika"
+      },
+      {
+        "isabelle_theory": "Sarvastivada_ThreeTimes",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Abhidharma.Sarvastivada"
+      },
+      {
+        "isabelle_theory": "Madhyamaka_Gamana",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Gamana"
+      },
+      {
+        "isabelle_theory": "FiniteLogics",
+        "lean_module": "BuddhistComparativeLogic.Core.Foundation"
+      },
+      {
+        "isabelle_theory": "Dharmakirti_Reasons",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Pramana.Dharmakirti"
+      },
+      {
+        "isabelle_theory": "Dignaga_Apoha",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Pramana.Apoha"
+      },
+      {
+        "isabelle_theory": "Catuskoti",
+        "lean_module": "BuddhistComparativeLogic.Core.Foundation"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Mantra",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Mantra"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Connexive",
+        "lean_module": "BuddhistComparativeLogic.Core.Connexive"
+      },
+      {
+        "isabelle_theory": "Madhyamaka_Jizang",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang"
+      },
+      {
+        "isabelle_theory": "Madhyamaka_MMK1",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.MMK1"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Emptiness",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Emptiness"
+      },
+      {
+        "isabelle_theory": "PlurivalentSemantics",
+        "lean_module": "BuddhistComparativeLogic.Core.Plurivalent"
+      },
+      {
+        "isabelle_theory": "Jaina_Saptabhangi",
+        "lean_module": "BuddhistComparativeLogic.Comparative.Jaina.Saptabhangi"
+      },
+      {
+        "isabelle_theory": "ManyValuedLogicExample",
+        "lean_module": "BuddhistComparativeLogic.Core.MVExample"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Path",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Path"
+      },
+      {
+        "isabelle_theory": "Madhyamaka_MMK24",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.MMK"
+      },
+      {
+        "isabelle_theory": "UniversalDesignation",
+        "lean_module": "BuddhistComparativeLogic.Core.UniversalDesignation"
+      },
+      {
+        "isabelle_theory": "FiniteDecisionProcedures",
+        "lean_module": "BuddhistComparativeLogic.Core.Decide"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Coverage",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Coverage"
+      },
+      {
+        "isabelle_theory": "HeartSutra_TwoTruths",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.TwoTruths"
+      },
+      {
+        "isabelle_theory": "UniversalDesignationFDE",
+        "lean_module": "BuddhistComparativeLogic.Core.UniversalDesignationFDE"
+      },
+      {
+        "isabelle_theory": "HeartSutra_PathModel",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.PathModel"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Anumana",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Pramana.Anumana"
+      },
+      {
+        "isabelle_theory": "Avyakata",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.EarlyBuddhism.Avyakata"
+      },
+      {
+        "isabelle_theory": "FDEProofTheory",
+        "lean_module": "BuddhistComparativeLogic.Core.FDEProof"
+      },
+      {
+        "isabelle_theory": "DiamondSutra_Sokuhi",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Sokuhi"
+      },
+      {
+        "isabelle_theory": "HeartSutra_Sanskrit",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Sanskrit"
+      },
+      {
+        "isabelle_theory": "Madhyamaka_StandpointSemantics",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Standpoints"
+      },
+      {
+        "isabelle_theory": "Madhyamaka_Vigrahavyavartani",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Vigraha"
+      },
+      {
+        "isabelle_theory": "HeartSutra_LongerRecension",
+        "lean_module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Longer"
+      }
+    ]
+  },
+  "generated_by": "tools/make_index.py"
+}

@@ -1,0 +1,2407 @@
+{
+  "schema": 1,
+  "policy": {
+    "historical_status": [
+      "passage_aligned",
+      "work_level",
+      "unverified",
+      "not_applicable"
+    ],
+    "release_status": [
+      "release_candidate",
+      "conditional_source_review",
+      "deferred_source_review",
+      "release_candidate_aggregate",
+      "source_review_aggregate",
+      "full_research_aggregate"
+    ],
+    "note": "Unverified is an explicit result, not a blank to be guessed."
+  },
+  "modules": [
+    {
+      "module": "BuddhistComparativeLogic",
+      "family": "Aggregates",
+      "provenance": "aggregate",
+      "isabelle_theories": [],
+      "reconstruction_kind": "aggregate",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "full_research_aggregate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "No theorem-level assumptions; this file is an import boundary.",
+      "claim_limit": "Import convenience only; consult the imported modules for claims.",
+      "documentation": [
+        "README.md",
+        "docs/RELEASE_SCOPE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Abhidharma.Analysis",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "abhidharmakosabhasya-6.4-gretil"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Abhidharmakośabhāṣya VI.4 and its bhāṣya are fixed at GRETIL source-page markers 333.23–334.13: breaking a pot and mentally separating water are conventional-existence examples, contrasted with form and feeling as ultimately existent. `Framework` and `RecognitionSurvives` are the module’s modern encoding.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "Passage-aligned only for the destruction/analysis examples and persistence of the relevant cognition. The finite-inventory complement theorem, certificate APIs, and ranked-rewrite adapter are modern results and are not attributed to Vasubandhu.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.Alambanapariksa",
+      "family": "Yogacara",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/INFERENCE_DEBATE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang.Antidote",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang.AntidoteSelection",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Anumana",
+      "family": "Pramana",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Anumana"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "chi-1969"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.AnupalabdhiKinds",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "nyayabindu-2.31-42-gretil"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Apoha",
+      "family": "Pramana",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Dignaga_Apoha"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.ApohaFeatures",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.ApohaSelection",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.ArgumentPipeline",
+      "family": "Heart Sutra",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.AssumptionAudit",
+      "family": "Heart Sutra",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "proof_infrastructure",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Named interfaces and certificates carry every premise consumed by the composition or transport theorem.",
+      "claim_limit": "The interface checks composition; it does not independently justify historical, causal, or empirical inputs.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.EarlyBuddhism.Avyakata",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Avyakata"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.BeliefRevision",
+      "family": "Heart Sutra",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Grammar.Bhartrhari",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "vakyapadiya-3.3.26-web"
+      ],
+      "secondary_or_formal_sources": [
+        "sep-literal-nonliteral-india"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Tibetan.BsdusGrwa",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "ngagwangtashi-collected-topics-uma"
+      ],
+      "secondary_or_formal_sources": [
+        "magee-2019-open-source-geshe"
+      ],
+      "source_note": "Ngag-wang-tra-shi’s bilingual Collected Topics, ch. 1, pp. 31–32 explicitly enumerates and witnesses all four possibilities between color and shape. Magee (2019) maps the broader four-relation taxonomy and warns that the compared phenomena are not concepts or sets. The Boolean implementation is therefore an explicit modern extensionalization.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "Passage-aligned to the four color/shape witness cells and secondarily oriented to the relation taxonomy. It does not claim that Tibetan phenomena are sets, that Boolean predicates capture intensional or dialectical practice, or that one manual exhausts the bsdus grwa genre.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.CatuskotiK3FDE",
+      "family": "Logic/Core",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "priest-2010",
+        "priest-2018"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/CATUSKOTI_K3_FDE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.CessationArgument",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/ARGUMENTS.md",
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang.CognitiveAntidote",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.Connexive",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Connexive"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.Foundation",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "FiniteLogics",
+        "Catuskoti"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "priest-2010",
+        "priest-2018",
+        "belnap-1977",
+        "dunn-1976",
+        "anderson-belnap-1962",
+        "ferguson-2016-faulty",
+        "ciuni-szmuc-ferguson-2018"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Coverage",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Coverage"
+      ],
+      "reconstruction_kind": "textual_formalization",
+      "modern_reconstruction": false,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "t251-project-received-262",
+        "t251-cbeta-pinned"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "The adopted witness, segmentation, alignment, or speech-act classification is explicit data.",
+      "claim_limit": "The project witness is not a critical edition, and textual alignment does not establish doctrinal truth.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.Decide",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "FiniteDecisionProcedures"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.DependenceCoverage",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.DependenceModes",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.DependentOrigination",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "siderits-katsura-2013"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/ARGUMENTS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Dharma",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Dharma"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "t251-project-received-262",
+        "t251-cbeta-pinned"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Dharmakirti",
+      "family": "Pramana",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Dharmakirti_Reasons"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "chi-1969"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.DirectedMomentariness",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Ekanekaviyoga",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Emptiness",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Emptiness"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "t251-project-received-262",
+        "t251-cbeta-pinned"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "attwood-2017"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.EmptinessInference",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Experimental",
+      "family": "Aggregates",
+      "provenance": "aggregate",
+      "isabelle_theories": [],
+      "reconstruction_kind": "aggregate",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "source_review_aggregate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "No theorem-level assumptions; this file is an import boundary.",
+      "claim_limit": "Import convenience only; consult the imported modules for claims.",
+      "documentation": [
+        "README.md",
+        "docs/RELEASE_SCOPE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.FDECalculus",
+      "family": "Logic/Core",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "belnap-1977",
+        "dunn-1976"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.FDEProof",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "FDEProofTheory"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "belnap-1977",
+        "dunn-1976"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Fazang.Mereology",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "fazang-t1866-507c03-508a22-cbeta"
+      ],
+      "secondary_or_formal_sources": [
+        "jones-2019-fazang-six-characteristics"
+      ],
+      "source_note": "CBETA T45 no. 1866, 507c3–508a22 fixes the six-characteristics list and the rafter-house dialogue, including the one-rafter removal example; Jones (2019) supplies standard secondary orientation. `CommonIdentity`, `StrongInterpenetration`, and the functional intervention fields are modern operational definitions.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "Passage-aligned for the six labels, the rafter-house case, and the stated removal dependence. It does not identify the Lean predicates with every Huayan use of identity or interpenetration, supply a literal translation, or claim a uniquely correct interpretation.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.FourfoldCausation",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "siderits-katsura-2013"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Gamana",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Madhyamaka_Gamana"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "siderits-katsura-2013"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.GamanaIntervals",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "siderits-katsura-2013"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.ChineseThought.HardWhite",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "gongsunlongzi-jianbai-ctext"
+      ],
+      "secondary_or_formal_sources": [
+        "graham-1967-hard-white",
+        "uzh-2015-gongsunlongzi-philology"
+      ],
+      "source_note": "The received Chinese Jianbai lun is fixed at Chinese Text Project; Graham (1967) analyzes the seen-white/touched-hard contrast and early evidence, while the University of Zurich overview records the disputed textual history. No user/AI English rendering from the primary-text site is adopted.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "Passage-aligned only to the received hard/white and sight/touch problem. The one-stone sensory countermodel does not establish the dialogue’s intended metaphysics, historical authorship, date, or a uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Hetucakra",
+      "family": "Pramana",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Dignaga_Hetucakra"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "chi-1969",
+        "iwata-2002-hetucakra",
+        "tillemans-2004-inductiveness",
+        "katsura-2004-example",
+        "oetke-2004-example"
+      ],
+      "source_note": "Iwata documents the wheel classification. Tillemans 2004 pp. 252-258 and Katsura 2004 p. 149 discuss subject exclusion and the known inferential gap. The finite predicates and subject-erasure implementation are modern diagnostics of that established issue, not a new objection to Dignaga.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.Ineffable",
+      "family": "Logic/Core",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.InferenceScope",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/ARGUMENTS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Jaina.JainaChange",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "tattvarthasutra-5.29-5.30"
+      ],
+      "secondary_or_formal_sources": [
+        "sep-jaina"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Jaina.JainaInference",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "nyayavatara-commentary-gretil"
+      ],
+      "secondary_or_formal_sources": [
+        "sep-jaina"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Skepticism.Jayarasi",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Madhyamaka_Jizang"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Ksanabhangasiddhi",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/PRAMANA_TREATISES.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Longer",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_LongerRecension"
+      ],
+      "reconstruction_kind": "textual_formalization",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "t251-cbeta-pinned"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "The adopted witness, segmentation, alignment, or speech-act classification is explicit data.",
+      "claim_limit": "The project witness is not a critical edition, and textual alignment does not establish doctrinal truth.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.MMK",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Madhyamaka_MMK24"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "siderits-katsura-2013"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.MMK1",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Madhyamaka_MMK1"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "siderits-katsura-2013"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.MVExample",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "ManyValuedLogicExample"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.MVLogic",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "ManyValuedLogic"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "belnap-1977",
+        "dunn-1976"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Mantra",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Mantra"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "t251-project-received-262",
+        "t251-cbeta-pinned"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.MatrixTransport",
+      "family": "Logic/Core",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Mimamsa.MimamsaEpistemology",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Mimamsa.MimamsaSentenceMeaning",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "salikanatha-vakyarthamatrka-i-textgrid"
+      ],
+      "secondary_or_formal_sources": [
+        "saxena-2018-mimamsa-verbal-cognition"
+      ],
+      "source_note": "Śālikanātha’s Vākyārthamātṛkā I e-text contains the explicit anvitābhidhāna/abhihitānvaya debate; Saxena (2018) identifies it as the locus classicus and supplies a translation/paraphrase together with Sucarita’s Bhāṭṭa response. The two Lean structures are modern typed architectures, not translations.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "Passage-aligned to the named contrast in sentence-meaning theory. The computation APIs, `CompositionBridge`, agreement theorem, and Bhartṛhari staged-language adapter are not claims found in the cited texts, and the module does not endorse either school as uniquely correct.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Mimamsa.MimamsaViniyoga",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "mimamsasutra-3.3.14-textgrid"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Passage aligned (source accessed 2026-09-19) to Mīmāṃsāsūtra 3.3.14, which enumerates the six interpretive grounds and their relative weakening. The Lean ranks and resolver are project-authored formal paraphrases.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "Passage-aligned for the six grounds and their relative ordering only. Numeric ranks, tie behavior, executable resolution, and example applications are modern infrastructure, not a translation of Jaimini or Śabara.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.ChineseThought.MohistCanons",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Momentariness",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Nyaya.NavyaNyayaAbsence",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "sen-chatterjee-2010-navya-nyaya",
+        "ganeri-2008-navya-regimentation",
+        "sep-early-modern-india-abhava"
+      ],
+      "source_note": "Secondary orientation only. Sen and Chatterjee pp. 83–85 and Ganeri, SEP §§11.2–11.3, substantiate the distinct locus, counterpositive, delimiter, and relation vocabulary. No primary passage or historical four-place formula is claimed.",
+      "assumption_boundary": "The `relates` and `delimits` fields and the perceptibility, finite-search, cognition, and detection conditions are supplied interfaces. The historical sources do not prove the module’s detection law.",
+      "claim_limit": "The four typed indices and certificate are a bounded modern reconstruction of source-oriented distinctions, not an edition, translation, or exhaustive Navya-Nyāya analysis.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Jaina.NayaDynamics",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.NegandumCalibration",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "sep-tsongkhapa-object-negation",
+        "garfield-thakchoe-2011-object-negation"
+      ],
+      "source_note": "Secondary orientation only (sources accessed 2026-09-19): SEP section 3 and Garfield–Thakchöe identify the paired danger of over-negation/under-negation. No primary Tibetan passage or translation is claimed; TooBroad, TooNarrow, and Calibrated are project-authored extensional paraphrases.",
+      "assumption_boundary": "The candidate and intrinsic predicates are supplied. Extensional recovery uses classical double-negation elimination; conventional-appearance and many-valued bridges require the separately named premises.",
+      "claim_limit": "A secondary-oriented modern calibration model, not a Tibetan edition, translation, passage-aligned exegesis, or uniquely correct Gelug reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Nyaya.Nyaya",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md",
+        "docs/INFERENCE_DEBATE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Nyaya.Nyayakusumanjali",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "nyayakusumanjali-5-gretil"
+      ],
+      "secondary_or_formal_sources": [
+        "ruzsa-2022-kusumanjali"
+      ],
+      "source_note": "Passage aligned (sources accessed 2026-09-19) to the received fifth section, verse 5.1 and the prose beginning kṣityādi kartṛpūrvakaṃ kāryatvāt. GRETIL is explicitly unproofread; Ruzsa 2022 motivates leaving verse authorship open. All English descriptions are project paraphrases.",
+      "assumption_boundary": "The conclusion requires an explicit universal MakerPervasion premise; one manufactured example does not establish it. Uniqueness, omniscience, eternity, and unrestricted domain claims are independent obligations.",
+      "claim_limit": "A bounded maker-inference audit of one kāryāt route, not a critical edition, full translation, complete Nyāyakusumāñjali, or proof of God.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.OtherMinds",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/INFERENCE_DEBATE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Grammar.PaniniDerivation",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "ashtadhyayi-1.4.2-sanskrit-library"
+      ],
+      "secondary_or_formal_sources": [
+        "rajpopat-2023-conflict-resolution"
+      ],
+      "source_note": "Passage aligned (sources accessed 2026-09-19) to Aṣṭādhyāyī 1.4.2, vipratiṣedhe paraṃ kāryam. Priority can encode the standard serial-order reading; ranks, lists, choice, termination, and determinism are modern infrastructure and not translations of the sūtra.",
+      "assumption_boundary": "Termination depends on a natural-number rank decrease for every applicable rule; unique normal forms require a separately supplied deterministic step relation. The Bhartrhari import supplies only a generic rewrite adapter.",
+      "claim_limit": "A configurable modern priority-rewrite system motivated by one metarule, not a full Aṣṭādhyāyī implementation or a unique historical account of conflict resolution.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Path",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Path"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "t251-project-received-262",
+        "t251-cbeta-pinned"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.PathDynamics",
+      "family": "Heart Sutra",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.PathModel",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_PathModel"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.Plurivalent",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "PlurivalentSemantics"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.PramanaSynthesis",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "proof_infrastructure",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Named interfaces and certificates carry every premise consumed by the composition or transport theorem.",
+      "claim_limit": "The interface checks composition; it does not independently justify historical, causal, or empirical inputs.",
+      "documentation": [
+        "docs/PRAMANA_YOGACARA.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.PramanaYogacara",
+      "family": "Yogacara",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/PRAMANA_YOGACARA.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Pramanasamuccaya",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/PRAMANA_TREATISES.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Pramanavarttika",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/PRAMANA_TREATISES.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Prasanga",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "siderits-katsura-2013"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/ARGUMENTS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Pratyaksabhasa",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "dignaga-ps1-steinkellner-2014",
+        "dharmakirti-nyayabindu-1.4-1.6-gretil"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Passage aligned (sources accessed 2026-09-19) to Dignāga PS(V) 1.3c and 1.7c–8b in Steinkellner’s revised reconstruction and Dharmakīrti Nyāyabindu 1.4–1.6 in the Shastri-based GRETIL text. The predicates and two-moons model are project paraphrases, not translations.",
+      "assumption_boundary": "Conceptuality, error, and truth are independent inputs. Dharmakīrti-side refinement is definitional, while reliability needs an explicit bridge from nonerror to true cognition.",
+      "claim_limit": "A finite comparison of two narrow criteria, not an edition, complete theory of perception, or claim that one Boolean predicate exhausts pratyakṣābhāsa.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.PremiseCertificates",
+      "family": "Heart Sutra",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "proof_infrastructure",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Named interfaces and certificates carry every premise consumed by the composition or transport theorem.",
+      "claim_limit": "The interface checks composition; it does not independently justify historical, causal, or empirical inputs.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Abhidharma.Pudgala",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "abhidharmakosabhasya-gretil"
+      ],
+      "secondary_or_formal_sources": [
+        "sep-vasubandhu",
+        "iep-pudgalavada"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.RecensionAlignment",
+      "family": "Heart Sutra",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "textual_formalization",
+      "modern_reconstruction": false,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "gretil-heart-sanskrit",
+        "silk-1994-heart-sutra"
+      ],
+      "secondary_or_formal_sources": [],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "The adopted witness, segmentation, alignment, or speech-act classification is explicit data.",
+      "claim_limit": "The project witness is not a critical edition, and textual alignment does not establish doctrinal truth.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Release",
+      "family": "Aggregates",
+      "provenance": "aggregate",
+      "isabelle_theories": [],
+      "reconstruction_kind": "aggregate",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate_aggregate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "No theorem-level assumptions; this file is an import boundary.",
+      "claim_limit": "Import convenience only; consult the imported modules for claims.",
+      "documentation": [
+        "README.md",
+        "docs/RELEASE_SCOPE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.Sahopalambha",
+      "family": "Yogacara",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Sambandhapariksa",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Sanskrit",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Sanskrit"
+      ],
+      "reconstruction_kind": "textual_formalization",
+      "modern_reconstruction": false,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "gretil-heart-sanskrit"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "attwood-2017"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "The adopted witness, segmentation, alignment, or speech-act classification is explicit data.",
+      "claim_limit": "The project witness is not a critical edition, and textual alignment does not establish doctrinal truth.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Jaina.Saptabhangi",
+      "family": "Comparative",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Jaina_Saptabhangi"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "samantabhadra-aptamimamsa-14-23-gretil"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port",
+        "sep-jaina",
+        "rahlwes-2023-saptabhangi",
+        "nahata-2024-syadvada",
+        "matilal-1981-central",
+        "ganeri-2020-jaina-reprint"
+      ],
+      "source_note": "Āptamīmāṃsā 14–23 anchors conditioned modes and naya. Matilal's successive/simultaneous distinction and Ganeri's alternative neutrality interpretation are recorded separately. E is independent existential support; the model does not implement simultaneous predication as a cause of inexpressibility.",
+      "assumption_boundary": "Three existential primitive supports determine all seven predicates. An arbitrary family has a noncomputably selected representative subfamily of at most three viewpoints, including the empty case.",
+      "claim_limit": "Small-model preservation concerns only these support predicates, not order, frequency, relations or general Jaina semantics. Relation information loss has a modern counterexample; the wrapper is not a historical theory of simultaneity.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Abhidharma.Sarvastivada",
+      "family": "Comparative",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Sarvastivada_ThreeTimes"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Samkhya.Satkaryavada",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "samkhyakarika-9"
+      ],
+      "secondary_or_formal_sources": [
+        "sep-naturalism-india",
+        "iep-sankhya"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Sokuhi",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "DiamondSutra_Sokuhi"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Vedanta.Sriharsa",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "deferred_source_review",
+      "primary_sources": [
+        "sriharsa-jha-1913-sweets-refutation"
+      ],
+      "secondary_or_formal_sources": [
+        "sep-sriharsa-das-2022"
+      ],
+      "source_note": "Jha, chapter I §14, paras. 257–259, and Das §§1.2, 2.1–2.3 map chance-correct awareness, overextension, circularity, and uniformity to named KKh passages. No precise primary passage is yet mapped for the module’s underextension test; its direct mutual dependency and Boolean `sameProfile` test are narrower modern surrogates.",
+      "assumption_boundary": "The finite relevant-alternatives model, the changed jewel/empty-shell example, direct reciprocal-dependency test, and Boolean `sameProfile` relation are supplied by the project. Jha’s translation is a historical witness with an explicit translator caveat.",
+      "claim_limit": "The module audits four finite modern defect predicates; it does not formalize all direct or indirect circularity, provide an edition of KKh, or identify its uniformity relation with Śrīharṣa’s own formulation.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Standpoints",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Madhyamaka_StandpointSemantics"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.SupportingArguments",
+      "family": "Madhyamaka",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "proof_infrastructure",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Named interfaces and certificates carry every premise consumed by the composition or transport theorem.",
+      "claim_limit": "The interface checks composition; it does not independently justify historical, causal, or empirical inputs.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.Svasamvedana",
+      "family": "Yogacara",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "dignaga-ps1-steinkellner-2014"
+      ],
+      "secondary_or_formal_sources": [
+        "mascarello-2025-svasamvedana"
+      ],
+      "source_note": "Passage aligned (sources accessed 2026-09-19) to Dignāga PS(V) 1.6ab and 1.9–12, especially 1.11c–d on later recollection. Technical labels are retained, but traces, laterness, and unique source attribution are project-authored typed decompositions, not translations.",
+      "assumption_boundary": "Self-presentation, trace formation, retention, laterness, content matching, and source uniqueness remain independent certificate fields; none follows from co-apprehension alone.",
+      "claim_limit": "A bounded reflexive-awareness and memory test bench, not an edition, exhaustive history of svasaṃvedana, or proof that recollection is the only historical argument.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.SvatantraPrasanga",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Nyaya.Tarka",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "nyayasutra-1.1.40-gretil"
+      ],
+      "secondary_or_formal_sources": [
+        "kang-2010-tarka"
+      ],
+      "source_note": "Nyāyasūtra 1.1.40 is fixed in the GRETIL Sanskrit text; Kang (2010) analyzes it with the Nyāyabhāṣya and cautions against an unqualified reductio reading. `CounterfactualStep` plus `SupportingPramana` is the module’s modern constructive reconstruction.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "The sūtra supports the target topic and doubt-removing orientation, but it does not state the exact rule `¬target → ¬supported`, the derivation of `¬¬target`, the later pramāṇa taxonomy, or the FDE comparison.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.Nyaya.Tattvacintamani",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Tattvasamgraha",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/PRAMANA_TREATISES.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.HeartSutra.Text",
+      "family": "Heart Sutra",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_Text"
+      ],
+      "reconstruction_kind": "textual_formalization",
+      "modern_reconstruction": false,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "t251-project-received-262",
+        "t251-cbeta-pinned"
+      ],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "The adopted witness, segmentation, alignment, or speech-act classification is explicit data.",
+      "claim_limit": "The project witness is not a critical edition, and textual alignment does not establish doctrinal truth.",
+      "documentation": [
+        "docs/LEAN_PROGRESS.md",
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Tibetan.Debate",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/INFERENCE_DEBATE.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Tibetan.Definitions",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.TwoTruths",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "HeartSutra_TwoTruths"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.UniversalDesignation",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "UniversalDesignation"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.UniversalDesignationFDE",
+      "family": "Logic/Core",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "UniversalDesignationFDE"
+      ],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Core.UniversalDesignationMore",
+      "family": "Logic/Core",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "formal_logic",
+      "modern_reconstruction": false,
+      "historical_status": "not_applicable",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "No historical passage claim is made.",
+      "assumption_boundary": "Carriers, operations, designated values, valuations, and finite enumerations are explicit parameters or data.",
+      "claim_limit": "A mathematical semantics or proof tool; it does not select a historical interpretation by itself.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Vadanyaya",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Madhyamaka.Vigraha",
+      "family": "Madhyamaka",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Madhyamaka_Vigrahavyavartani"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.Vimsatika",
+      "family": "Yogacara",
+      "provenance": "isabelle_port",
+      "isabelle_theories": [
+        "Yogacara_Vimsatika"
+      ],
+      "reconstruction_kind": "semantic_port",
+      "modern_reconstruction": false,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "internal-isabelle-port"
+      ],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Locale/record fields expose the doctrinal and semantic premises mirrored from the Isabelle theory.",
+      "claim_limit": "A semantic headline-result port, not a declaration-for-declaration translation or proof of the premises.",
+      "documentation": [
+        "docs/PORTING.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.VimsatikaModels",
+      "family": "Yogacara",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Hermeneutics.Vyakhyayukti",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "lee-2001-vyakhyayukti-tibetan"
+      ],
+      "secondary_or_formal_sources": [
+        "ueno-2021-vyakhyayukti",
+        "uva-vyakhyayukti-30b"
+      ],
+      "source_note": "Passage aligned (sources accessed 2026-09-19) to Vyākhyāyukti saṃgrahaśloka 1 and the five tasks, with Lee’s four-recension Tibetan critical edition, Ueno’s pp. 95–96 Sanskrit witness and translation, and Mandala’s 30b locator. Lean task predicates are project paraphrases and a modern checklist.",
+      "assumption_boundary": "Coverage is relative to a supplied framework and explicit witnesses; it does not prove truth, completeness beyond that framework, or uniqueness of an interpretation.",
+      "claim_limit": "A finite certificate system for the five identified tasks, not an edition, full translation, or formalization of the entire Vyākhyāyukti.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Pramana.Vyaptinirnaya",
+      "family": "Pramana",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [
+        "ratnakirti-vyaptinirnaya-gretil"
+      ],
+      "secondary_or_formal_sources": [
+        "oeaw-vyaptinirnaya"
+      ],
+      "source_note": "Registered sources identify the stated witness, work, or passage; consult source status before treating it as a critical edition.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Comparative.ChineseThought.WhiteHorse",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.KoreanBuddhism.WonhyoHwajaeng",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "deferred_source_review",
+      "primary_sources": [
+        "wonhyo-simmun-muller-2016"
+      ],
+      "secondary_or_formal_sources": [
+        "muller-2015-hwajaeng"
+      ],
+      "source_note": "Muller’s translation records that only fragments of the beginning of Simmun hwajaeng non survive (HBJ/HPC 1.838–841). The fragment and Muller’s study support attention to positions’ backgrounds, aims, assumptions, and precise divergence, but do not supply coverage, overlap-agreement, or gluing operations.",
+      "assumption_boundary": "The finite contexts, `inScope` predicate, coverage condition, overlap agreement, and gluing function are project-authored interfaces. The extant fragment does not establish a sheaf-like construction.",
+      "claim_limit": "The module is a bounded modern analogy for local-to-global consistency, not a translation, reconstruction of the lost work, or claim that Wŏnhyo used sheaf semantics.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Xuanzang.Inference",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "passage_aligned",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [
+        "tang-2018-xuanzang-inference"
+      ],
+      "source_note": "Passage aligned through Tang’s source study (accessed 2026-09-19), especially pp. 143–150 and edited materials Texts 1.1, 1.9, and 5.2, for the three qualifications and Wŏnhyo counter-inference. The module records the dispute and paraphrases argumentative roles.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A modern acceptance-scope audit of a contested inference. It does not settle authenticity, establish a uniquely correct interpretation, reproduce a source translation, or infer historical acceptance from formal validity.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Abhidharma.Yamaka",
+      "family": "Comparative",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/COMPARATIVE_LOGIC.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.YogacaraConsciousness",
+      "family": "Yogacara",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/PRAMANA_YOGACARA.md"
+      ]
+    },
+    {
+      "module": "BuddhistComparativeLogic.Buddhist.Yogacara.YogacaraSynthesis",
+      "family": "Yogacara",
+      "provenance": "lean_extension",
+      "isabelle_theories": [],
+      "reconstruction_kind": "bounded_modern_reconstruction",
+      "modern_reconstruction": true,
+      "historical_status": "work_level",
+      "release_status": "release_candidate",
+      "primary_sources": [],
+      "secondary_or_formal_sources": [],
+      "source_note": "Work- or topic-level orientation only; passage-to-predicate mapping remains open.",
+      "assumption_boundary": "Positive results require the module’s named model or certificate fields; finite boundaries expose omitted bridges.",
+      "claim_limit": "A bounded modern reconstruction, not an edition, translation, exhaustive doctrine, or uniquely correct reading.",
+      "documentation": [
+        "docs/PRAMANA_YOGACARA.md"
+      ]
+    }
+  ]
+}

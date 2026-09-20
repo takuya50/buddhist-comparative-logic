@@ -1,0 +1,16 @@
+Pinned CBETA T08n0251, running text at T08.0848c06-22
+XML SHA-256: f5507df86309f861ef2b92e9ba9db985c6db0ad357553599c6e921e15deca761
+Excluded: titles, bylines, prefaces, apparatus, punctuation, whitespace
+CBETA running body: 260 codepoints; adopted body: 262
+Differences, zero-based half-open offsets (CBETA -> adopted):
+  insert: [165:165] '' -> [165:167] '一切'
+  replace: [243:244] '帝' -> [245:246] '諦'
+  replace: [245:247] '帝般' -> [247:249] '諦波'
+  replace: [249:251] '帝般' -> [251:253] '諦波'
+  replace: [254:255] '帝' -> [256:257] '諦'
+  replace: [257:258] '莎' -> [259:260] '薩'
+Only length change: insertion of 一切 after 遠離 (+2).
+Mantra: 帝->諦 (4), 般羅->波羅 (2), 莎婆->薩婆 (1).
+At 0848c22 CBETA reads 莎婆; its apparatus records Taisho 僧莎
+and Song/Yuan/Ming 薩婆. These are distinct witnesses, not one base text.
+PASS: the declared variants reconstruct the adopted witness exactly.

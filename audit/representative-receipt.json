@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "started_utc": "2026-09-20T01:57:59.112132+00:00",
+  "status": "PASS",
+  "scope": "Representative dependencies and optional pinned-witness comparison; not a full build receipt.",
+  "steps": [
+    {
+      "name": "Lean version",
+      "command": "<lake-bin> env lean --version",
+      "exit_code": 0,
+      "report": "audit/lean-version.txt",
+      "report_sha256": "19dcb94e3b0d87de7ec777bbda05b6f4feeac486445986232b4963f8d1503678"
+    },
+    {
+      "name": "Isabelle version",
+      "command": "<isabelle-bin> version",
+      "exit_code": 0,
+      "report": "audit/isabelle-version.txt",
+      "report_sha256": "9d17d4407bf09c119ca89c25f3c72fc4461c91b5db6d104c4d25768d2eb10622"
+    },
+    {
+      "name": "Lake import build",
+      "command": "<lake-bin> build",
+      "exit_code": 0,
+      "report": "audit/lake-build.txt",
+      "report_sha256": "6081efce30abb88984a3f7fd2206fde711e068e10e62f0f27eb7db19bcca1473"
+    },
+    {
+      "name": "Lean representative dependencies",
+      "command": "<lake-bin> env lean verification/representative_axioms.lean",
+      "exit_code": 0,
+      "report": "audit/lean-axioms.txt",
+      "report_sha256": "a301c4fcafbbf85d03ad63c55d6372dbab5cd3b7b0ea9a44598ba62dccd26ccc"
+    },
+    {
+      "name": "Isabelle representative oracles",
+      "command": "<isabelle-bin> process_theories -D verification -d isabelle -l Buddhist_Comparative_Logic -O -U Representative_Oracles",
+      "exit_code": 0,
+      "report": "audit/isabelle-oracles.txt",
+      "report_sha256": "d9704aa89ebec9c362bf6cef615fc2d1ea377424ff19781e43b9e8db731eab4f"
+    },
+    {
+      "name": "Pinned CBETA witness comparison",
+      "command": "python3 tools/compare_cbeta_witness.py <external-cbeta.xml>",
+      "exit_code": 0,
+      "report": "audit/cbeta-comparison.txt",
+      "report_sha256": "b5d369abaebab28a1bed10d119557eb1db9c083aacc10c46a42d2f7f52f855ce"
+    },
+    {
+      "name": "Software source snapshot",
+      "command": "python3 tools/make_snapshot.py",
+      "exit_code": 0,
+      "report": "audit/snapshot.txt",
+      "report_sha256": "2e48b73a6e61e16f313f72a3709c0b0ea9aebdcc30b07d9a33221e75853931b3"
+    }
+  ],
+  "cbeta": "PASS (pinned external XML; not redistributed)",
+  "lean_declarations": 33,
+  "isabelle_declarations": 32,
+  "meaning": "Requested representative dependency checks passed. Lean dependencies are restricted to propext, Classical.choice and Quot.sound; the selected Isabelle oracle list is empty. Record fields and theorem arguments remain premises. CBETA is separate and may be NOT RUN."
+}

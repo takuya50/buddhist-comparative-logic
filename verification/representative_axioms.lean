@@ -1,0 +1,49 @@
+/- SPDX-License-Identifier: Apache-2.0 -/
+
+import BuddhistComparativeLogic.Core.FDEProof
+import BuddhistComparativeLogic.Buddhist.HeartSutra.Emptiness
+import BuddhistComparativeLogic.Buddhist.Pramana.Hetucakra
+import BuddhistComparativeLogic.Buddhist.Pramana.InferenceScope
+import BuddhistComparativeLogic.Comparative.Jaina.Saptabhangi
+
+/-!
+Representative Lean dependency audit for the software corpus.
+
+Run from the repository root with:
+
+  lake env lean verification/representative_axioms.lean
+-/
+
+#print axioms BuddhistComparativeLogic.FDEProof.fde_variable_sharing
+#print axioms BuddhistComparativeLogic.FDEProof.fde5_is_fde_plus_containment
+#print axioms BuddhistComparativeLogic.FDEProof.fde_dec_correct
+#print axioms BuddhistComparativeLogic.FDEProof.fdeCountermodel_sound
+#print axioms BuddhistComparativeLogic.FDEProof.fdeCountermodel_none_iff
+#print axioms BuddhistComparativeLogic.FDEProof.fdeCountermodel_complete
+#print axioms BuddhistComparativeLogic.FDEProof.fde5Countermodel_sound
+#print axioms BuddhistComparativeLogic.FDEProof.fde5Countermodel_none_iff
+#print axioms BuddhistComparativeLogic.FDEProof.fde5Countermodel_complete
+#print axioms BuddhistComparativeLogic.FDEProof.countermodel_explosion
+#print axioms BuddhistComparativeLogic.FDEProof.countermodel_conj_elim
+#print axioms BuddhistComparativeLogic.FDEProof.countermodel5_atom_escape
+#print axioms BuddhistComparativeLogic.FDEProof.countermodel5_same_atoms
+#print axioms BuddhistComparativeLogic.Emptiness.sarva_dharma_sunya
+#print axioms BuddhistComparativeLogic.EmptinessData.sarva_dharma_sunya_from_core
+#print axioms BuddhistComparativeLogic.emptiness_without_mmk
+#print axioms BuddhistComparativeLogic.emptiness_without_pratitya
+#print axioms BuddhistComparativeLogic.emptiness_core_relative_independence
+#print axioms BuddhistComparativeLogic.hs10_fde_formula_iff_B
+#print axioms BuddhistComparativeLogic.Hetucakra.Anumana.wheel_valid_iff
+#print axioms BuddhistComparativeLogic.Hetucakra.no_deductive_soundness
+#print axioms BuddhistComparativeLogic.InferenceScope.uniformity_iff_thesis_under_marks
+#print axioms BuddhistComparativeLogic.Saptabhangi.saptabhangi_not_truth_functional
+#print axioms BuddhistComparativeLogic.Saptabhangi.all_seven_satisfiable
+#print axioms BuddhistComparativeLogic.Saptabhangi.seventh_mode_needs_three_nayas
+#print axioms BuddhistComparativeLogic.Saptabhangi.seventh_mode_supports_every_mode
+#print axioms BuddhistComparativeLogic.Saptabhangi.naya_small_model
+#print axioms BuddhistComparativeLogic.Saptabhangi.representativeNayas_preserve_all
+#print axioms BuddhistComparativeLogic.Saptabhangi.representativeNayas_empty
+#print axioms BuddhistComparativeLogic.Saptabhangi.naya_small_model_bound_sharp
+#print axioms BuddhistComparativeLogic.Saptabhangi.observation_variants_same_profile
+#print axioms BuddhistComparativeLogic.Saptabhangi.observation_variants_different_relation
+#print axioms BuddhistComparativeLogic.Saptabhangi.naya_profile_cannot_recover_relation

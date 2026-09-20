@@ -1,0 +1,729 @@
+{
+  "schema": 1,
+  "policy": {
+    "primary": "A historical text, edition, translation, or direct textual witness.",
+    "secondary": "Modern scholarship or a reference overview used for orientation.",
+    "formal": "A source for the mathematical or logical machinery rather than for a historical interpretation.",
+    "unverified": "The work or topic is named, but a passage-level edition has not been registered."
+  },
+  "sources": [
+    {
+      "id": "schlichtkrull-villadsen-2016-paraconsistency",
+      "kind": "formal",
+      "citation": "Anders Schlichtkrull and Jørgen Villadsen, Paraconsistency, Archive of Formal Proofs (2016), first released 7 December 2016",
+      "locator": "https://isa-afp.org/entries/Paraconsistency.html",
+      "status": "official-entry-and-author-publication-records-consulted",
+      "note": "Session Paraconsistency formalizes a countably infinite-valued paraconsistent propositional logic, with validity results, counterexamples and metatheory. It is not FDE. The release year is 2016, distinct from later development-PDF update dates. The official development entry was also consulted at https://devel.isa-afp.org/entries/Paraconsistency.html; the canonical citation is the release entry.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "steen-benzmuller-2016-sixteen",
+      "kind": "formal",
+      "citation": "Alexander Steen and Christoph Benzmüller, Sweet SIXTEEN: Automation via Embedding into Classical Higher-Order Logic, Logic and Logical Philosophy 25(4) (2016), 535-554, DOI 10.12775/LLP.2016.021",
+      "locator": "https://doi.org/10.12775/LLP.2016.021",
+      "status": "publisher-record-and-abstract-consulted",
+      "note": "A higher-order embedding of the sixteen-valued generalization of Dunn-Belnap logic, with an Isabelle/HOL implementation and automated reasoning experiments. Cited as embedding and automation, not as evidence of a kernel-checked adequacy theorem or of a mechanization of the exact FDE containment theorem. Publisher record: https://apcz.umk.pl/LLP/article/view/LLP.2016.021 .",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "larchey-wendling-2020-decision",
+      "kind": "formal",
+      "citation": "Dominique Larchey-Wendling, Constructive Decision via Redundancy-Free Proof-Search, Journal of Automated Reasoning 64 (2020), 1197-1219, DOI 10.1007/s10817-020-09555-y",
+      "locator": "https://doi.org/10.1007/s10817-020-09555-y",
+      "status": "publisher-abstract-and-bibliography-consulted",
+      "note": "The publisher abstract reports an axiom-free Coq mechanization of a constructive decidability method, instantiated for implicational relevance logic. This supports a precedent for proof-assistant work on nonclassical reasoning, not a claim about FDE or the corpus's exact variable-sharing and containment results.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "benzmuller-2016-inconsistency",
+      "kind": "formal",
+      "citation": "Christoph Benzmüller and Bruno Woltzenlogel Paleo, The Inconsistency in Gödel's Ontological Argument: A Success Story for AI in Metaphysics, Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelligence (IJCAI-16) (2016), 936-942",
+      "locator": "https://www.ijcai.org/Proceedings/16/Papers/137.pdf",
+      "status": "publisher-full-text-consulted",
+      "note": "Sections 3.2, 4.1-4.3 and 5 consulted. Section 4.3, pp. 940-941 and Figure 6, identifies the definitions and axioms used in the verified refutation and maps them to Gödel's manuscript. A methodological precedent for premise auditing and source correspondence, not a claim that the present corpus discovers a comparable historical inconsistency. Publisher bibliographic record: https://www.ijcai.org/Abstract/16/137 . No DOI was confirmed on the primary publication pages.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "fuenmayor-2019-explicitation",
+      "kind": "formal",
+      "citation": "David Fuenmayor and Christoph Benzmüller, A Computational-Hermeneutic Approach for Conceptual Explicitation, in Ángel Nepomuceno-Fernández, Lorenzo Magnani, Francisco J. Salguero-Lamillar, Cristina Barés-Gómez and Matthieu Fontaine (eds.), Model-Based Reasoning in Science and Technology, Studies in Applied Philosophy, Epistemology and Rational Ethics 49 (Springer, Cham, 2019), 441-469, DOI 10.1007/978-3-030-32722-4_25",
+      "locator": "https://arxiv.org/pdf/1906.06582",
+      "status": "author-preprint-consulted-publisher-metadata-checked",
+      "note": "Author preprint sections 2.1, 3.2-3.5 and 4.1-4.2 consulted; printed preprint pp. 20-23 show iterative analysis of Lowe's argument, a Nitpick countermodel, and the separation of premises from meaning postulates. These are preprint pinpoint pages, not published chapter page numbers. Publisher metadata: https://link.springer.com/chapter/10.1007/978-3-030-32722-4_25 . A precedent for making interpretive choices explicit; the present corpus does not implement the full charity-guided search for adequate argument formalizations or an automated hermeneutic engine. Not to be confused with the distinct 2019 chapter Computational Hermeneutics: An Integrated Approach for the Logical Analysis of Natural-Language Arguments.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "benzmuller-2020-logikey",
+      "kind": "formal",
+      "citation": "Christoph Benzmüller, Xavier Parent and Leendert van der Torre, Designing Normative Theories for Ethical and Legal Reasoning: LogiKEy Framework, Methodology, and Tool Support, Artificial Intelligence 287 (2020), 103348, DOI 10.1016/j.artint.2020.103348",
+      "locator": "https://arxiv.org/pdf/1903.10187v6",
+      "status": "author-preprint-consulted-publication-metadata-checked",
+      "note": "Author preprint v6 sections 5.1 and 7.1-7.4 consulted, especially printed preprint pp. 31-36: logic/domain/application layers, theorem-prover and model-finder checks, embedding faithfulness, and remaining interpretive open texture. These are preprint pinpoint pages. Publication DOI and journal record are independently listed by the author-maintained project: https://logikey.org/ . A methodological antecedent of layered formalization and inspectable proof/countermodel feedback; the present corpus is not an implementation of LogiKEy or an operational normative-governance system.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "hayes-1988-dignaga",
+      "kind": "secondary",
+      "citation": "Richard P. Hayes, Dignāga on the Interpretation of Signs, Studies of Classical India 9 (Kluwer Academic Publishers, Dordrecht, 1988), DOI 10.1007/978-94-009-2899-2",
+      "locator": "https://www.scribd.com/document/171007305/%25EB%2594%2594%25EA%25B7%25B8%25EB%2582%2598%25EA%25B0%2580%25EA%25B8%25B0%25ED%2598%25B8%25EB%25A1%25A0",
+      "status": "book-ocr-passages-consulted",
+      "note": "Original-book OCR consulted at pp. 122-125 on the three marks, false conclusions, and transfer between domains, and p. 127 on the subject-only asādhāraṇa case. Publication locator: https://doi.org/10.1007/978-94-009-2899-2 . These passages are historical antecedents of the scope problem, not assertions of novelty for the corpus's finite countermodel or its added bridge premise; the hosted OCR is not a new critical edition.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "priest-2008-jaina",
+      "kind": "formal",
+      "citation": "Graham Priest, Jaina Logic: A Contemporary Perspective, History and Philosophy of Logic 29(3) (2008), 263-278, DOI 10.1080/01445340701690233",
+      "locator": "https://grahampriest.net/?ddownload=1169",
+      "status": "author-hosted-article-consulted",
+      "note": "Section 3, pp. 265-266, distinguishes cumulative overlapping conditions from exact values and obtains the seven nonempty subsets of three basic values. Section 5, pp. 268-269, responds to Ganeri. The corpus's cumulative support profile and exact-support presentation must remain distinct; the seven-combination mathematics is not a novel contribution.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "chapman-2026-modal",
+      "kind": "formal",
+      "citation": "Chance Chapman, The Modal Catuṣkoṭi: Formalizing Emptiness in Classical Modal Logic, Comparative Philosophy 17(2) (2026), Article 5, DOI 10.55917/2151-6014.1919",
+      "locator": "https://scholarworks.sjsu.edu/comparativephilosophy/vol17/iss2/5/",
+      "status": "publisher-metadata-and-doi-resolvers-checked",
+      "note": "The publisher's Recommended Citation explicitly gives DOI 10.55917/2151-6014.1919. Direct HTTP HEAD checks on 2026-09-20 at approximately 09:35 JST returned 302 from that DOI to the publisher article and 404 for the proposed alternative 10.31979/2151-6014(2026).170205. No alias or migration relationship was established; retain the publisher-displayed DOI. The publisher PDF was not retrieved in this check, so no claim is made about an identifier printed inside it.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "anderson-belnap-1962",
+      "kind": "formal",
+      "citation": "Alan Ross Anderson and Nuel D. Belnap, Tautological Entailments, Philosophical Studies 13(1/2) (1962), 9-24",
+      "locator": "https://doi.org/10.1007/BF00818100",
+      "status": "author-text-consulted",
+      "note": "Historical variable-sharing background, pp. 14 and 16; not a presentation of the current four-valued matrix.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "ferguson-2016-faulty",
+      "kind": "formal",
+      "citation": "Thomas Macaulay Ferguson, Faulty Belnap Computers and Subsystems of FDE, Journal of Logic and Computation 26(5) (2016), 1617-1636; online first 2014",
+      "locator": "https://doi.org/10.1093/logcom/exu048",
+      "status": "author-text-consulted",
+      "note": "Definition 2 has FDE plus an undesignated infectious value. Theorem 3 is exactly single-premise FDE consequence plus conclusion-to-premise atom containment. Corollary 4 identifies the starred S_fde system; do not confuse it with Deutsch's unstarred system. Author version: https://www.researchgate.net/publication/274151007_Faulty_Belnap_computers_and_subsystems_of_FDE . Final-version point page not asserted.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "ciuni-szmuc-ferguson-2018",
+      "kind": "formal",
+      "citation": "Roberto Ciuni, Damian Szmuc and Thomas Macaulay Ferguson, Relevant Logics Obeying Component Homogeneity, Australasian Journal of Logic 15(2) (2018), 301-361",
+      "locator": "https://ojs.victoria.ac.nz/ajl/article/download/4864/4318/6680",
+      "status": "publisher-full-text-consulted",
+      "note": "Section 2.3 p. 313 directly records FDE variable sharing as familiar; Definition 11 pp. 318-319 gives the five-valued starred matrix; Corollary 11(1) p. 334 matches the single-premise atom-containment theorem. DOI 10.26686/ajl.v15i2.4864. Deutsch's original article was not consulted; the unstarred/starred distinction is taken from this paper.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "tillemans-2004-inductiveness",
+      "kind": "secondary",
+      "citation": "Tom J. F. Tillemans, Inductiveness, Deductiveness and Examples in Buddhist Logic, in Katsura and Steinkellner (eds.), The Role of the Example (drstanta) in Classical Indian Logic, WSTB 58 (2004), 251-275",
+      "locator": "https://www.scribd.com/document/441868425/WSTB-58-Katsura-and-Steinkellner-The-Role-of-the-Example-Dristanta-in-Classical-Indian-Logic-Wien-2004-pdf",
+      "status": "chapter-full-text-consulted",
+      "note": "Pages 252-255 discuss school-sensitive subject exclusion and revisit On Sapaksa (1990); p. 258 explicitly identifies failure of formal entailment from the off-subject generalization. The 1990 paper was bibliographically checked, not independently read.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "katsura-2004-example",
+      "kind": "secondary",
+      "citation": "Shoryu Katsura, The Role of drstanta in Dignaga's Logic, in The Role of the Example, WSTB 58 (2004), 135-173",
+      "locator": "https://www.scribd.com/document/441868425/WSTB-58-Katsura-and-Steinkellner-The-Role-of-the-Example-Dristanta-in-Classical-Indian-Logic-Wien-2004-pdf",
+      "status": "chapter-full-text-consulted",
+      "note": "Pages 144-149 consulted; p. 149 treats subject exclusion from the comparison classes.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "oetke-2004-example",
+      "kind": "secondary",
+      "citation": "Claus Oetke, The Role of the Example in Ancient Indian Logic, in The Role of the Example, WSTB 58 (2004), 175-195",
+      "locator": "https://www.scribd.com/document/441868425/WSTB-58-Katsura-and-Steinkellner-The-Role-of-the-Example-Dristanta-in-Classical-Indian-Logic-Wien-2004-pdf",
+      "status": "chapter-full-text-consulted",
+      "note": "Pages 184 and 187-188 additionally consulted in the discussion of the inferential role of examples. Pages 190-191 distinguish defeasible rule application from the inferential step establishing the rule. No content attributed to the unconsulted 1994 monograph.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "matilal-1981-central",
+      "kind": "secondary",
+      "citation": "Bimal Krishna Matilal, The Central Philosophy of Jainism (Anekanta-vada), L. D. Series 79, Ahmedabad: L. D. Institute of Indology (1981)",
+      "locator": "https://jainqq.org/booktext/Central_Philosophy_of_Jainism_Anekanta_Vada/001129",
+      "status": "author-text-consulted",
+      "note": "Pages 54-56 and 59-60: successive joint predication (third mode), simultaneous joint predication (fourth) and inexpressibility, followed by three primitive units and seven combinations. The support model omits the successive/simultaneous distinction and does not derive E from simultaneity.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "ganeri-2020-jaina-reprint",
+      "kind": "secondary",
+      "citation": "Jonardon Ganeri, Jaina Logic and the Philosophical Basis of Pluralism, in Indian Philosophy: A Reader (Routledge, 2020), ch. 20, 344-358; reprint of History and Philosophy of Logic 23(4) (2002), 267-281, DOI 10.1080/0144534021000051505",
+      "locator": "https://doi.org/10.1080/0144534021000051505",
+      "status": "2020-reprint-consulted-original-pagination-unverified",
+      "note": "Reprint pp. 346-351 examined: alternative scopes of arguably, then neutrality-based inexpressibility drawing on Prabhacandra. Not treated as agreement with Matilal's simultaneous-contradiction account. No unverified pinpoint page attributed to the 2002 original.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "t251-project-received-262",
+      "kind": "primary",
+      "citation": "Project-adopted received Chinese witness of the Xuanzang-attributed Heart Sutra, 262-codepoint body",
+      "locator": "sources/text/heart-sutra-t251-received-262.txt",
+      "status": "local-witness-checksummed"
+    },
+    {
+      "id": "t251-cbeta-pinned",
+      "kind": "primary",
+      "citation": "CBETA XML P5, Taisho T08 no. 251, pp. 848c6-22",
+      "locator": "https://github.com/cbeta-org/xml-p5/blob/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T08/T08n0251.xml",
+      "status": "pinned-comparison-witness",
+      "note": "Not redistributed. The running body has 260 codepoints; local insertion 一切 at HS22 yields 262. Mantra variants 帝/諦, 般羅/波羅, 莎婆/薩婆 preserve length. At 0848c22 distinguish CBETA 莎婆 from apparatus Taisho 僧莎 and Song/Yuan/Ming 薩婆. See the saved executable comparison report.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "westerhoff-2006-catuskoti",
+      "kind": "secondary",
+      "citation": "Jan Westerhoff, Nagarjuna's Catuskoti, Journal of Indian Philosophy 34 (2006), 367-395, DOI 10.1007/s10781-005-6172-4",
+      "locator": "https://www.academia.edu/44997977/N%C4%81g%C4%81rjunas_catu%E1%B9%A3ko%E1%B9%ADi",
+      "status": "author-linked-original-article-consulted",
+      "note": "Author research page links this text. Consulted pp.368-370 (two negations), 375-376/n.37 (third/fourth object-formula collapse), 379-380 (illocutionary negation). Distinct FDE values B/N are not identified. The corpus's meta-level non-designation does not implement prasajya or speech acts; MMK discussion does not decide the Heart Sutra interpretation.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "nattier-1992-heart",
+      "kind": "secondary",
+      "citation": "Jan Nattier, The Heart Sutra: A Chinese Apocryphal Text?, Journal of the International Association of Buddhist Studies 15(2) (1992), 153-223, DOI 10.2143/JIABS.15.2.3286001",
+      "locator": "https://doi.org/10.2143/JIABS.15.2.3286001",
+      "status": "original-article-scan-consulted",
+      "note": "Printed pp. 167-173 examined for the Chinese-composition and Sanskrit back-translation argument. Publisher metadata independently confirms DOI and pagination. This is a philological hypothesis, not a theorem of the corpus or a settled attribution inferred from its checksum.",
+      "accessed": "2026-09-20"
+    },
+    {
+      "id": "gretil-heart-sanskrit",
+      "kind": "primary",
+      "citation": "GRETIL, Prajnaparamitahrdaya Sanskrit electronic text",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/4_rellit/buddh/prajnhsu.htm",
+      "status": "locator-carried-from-documentation"
+    },
+    {
+      "id": "silk-1994-heart-sutra",
+      "kind": "primary",
+      "citation": "Jonathan A. Silk, The Heart Sutra in Tibetan: A Critical Edition of the Two Recensions Contained in the Kanjur (1994)",
+      "locator": "https://wstb.univie.ac.at/wp-content/uploads/WSTB_34.pdf",
+      "status": "locator-carried-from-documentation"
+    },
+    {
+      "id": "attwood-2017",
+      "kind": "secondary",
+      "citation": "Jayarava Attwood, Form is (Not) Emptiness: The Enigma at the Heart of the Heart Sutra (2017)",
+      "locator": "isabelle/document/root.bib#attwood2017",
+      "status": "bibliography-record"
+    },
+    {
+      "id": "siderits-katsura-2013",
+      "kind": "primary",
+      "citation": "Mark Siderits and Shoryu Katsura, Nagarjuna's Middle Way (2013)",
+      "locator": "isabelle/document/root.bib#siderits2013",
+      "status": "translation-bibliography-record"
+    },
+    {
+      "id": "priest-2010",
+      "kind": "formal",
+      "citation": "Graham Priest, The Logic of the Catuskoti (2010)",
+      "locator": "isabelle/document/root.bib#priest2010",
+      "status": "bibliography-record"
+    },
+    {
+      "id": "priest-2018",
+      "kind": "formal",
+      "citation": "Graham Priest, The Fifth Corner of Four (2018)",
+      "locator": "isabelle/document/root.bib#priest2018",
+      "status": "bibliography-record"
+    },
+    {
+      "id": "belnap-1977",
+      "kind": "formal",
+      "citation": "Nuel D. Belnap, A Useful Four-Valued Logic (1977)",
+      "locator": "isabelle/document/root.bib#belnap1977",
+      "status": "bibliography-record"
+    },
+    {
+      "id": "dunn-1976",
+      "kind": "formal",
+      "citation": "J. Michael Dunn, Intuitive Semantics for First-Degree Entailments and Coupled Trees (1976)",
+      "locator": "isabelle/document/root.bib#dunn1976",
+      "status": "bibliography-record"
+    },
+    {
+      "id": "chi-1969",
+      "kind": "secondary",
+      "citation": "Richard S. Y. Chi, Buddhist Formal Logic (1969)",
+      "locator": "isabelle/document/root.bib#chi1969",
+      "status": "bibliography-record"
+    },
+    {
+      "id": "iwata-2002-hetucakra",
+      "kind": "secondary",
+      "citation": "Takashi Iwata, “The Pramāṇaviniścaya on the Purpose of the Division of Reasons into Nine Types in the Hetucakra,” Wiener Zeitschrift für die Kunde Südasiens 46 (2002), 225–257",
+      "locator": "https://www.austriaca.at/0xc1aa5572%200x000291ab.pdf",
+      "status": "peer-reviewed-full-text-source-study",
+      "note": "The article documents the three characteristics of a reason, the nine-cell division, valid cells 2 and 8, contradictory cells 4 and 6, and Dharmakīrti’s account of the inferential basis. The repository’s finite loci, extensional predicates, and subject-erasure countermodel are project-authored diagnostics.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used to check the wheel classification and terminology; no passage is reproduced and the formal predicates are not presented as a translation of the Pramāṇaviniścaya."
+    },
+    {
+      "id": "nyayabindu-2.31-42-gretil",
+      "kind": "primary",
+      "citation": "Dharmakirti, Nyayabindu II.31-42, GRETIL electronic text",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/buddh/dhknyayu.htm",
+      "status": "passage-and-locator-identified"
+    },
+    {
+      "id": "vakyapadiya-3.3.26-web",
+      "kind": "primary",
+      "citation": "Bhartrhari, Vakyapadiya 3.3.26, online text and translation",
+      "locator": "https://www.wisdomlib.org/hinduism/book/vakyapadiya-of-bhartrihari/d/doc1336996.html",
+      "status": "passage-identified-noncritical-web-edition"
+    },
+    {
+      "id": "sep-literal-nonliteral-india",
+      "kind": "secondary",
+      "citation": "Stanford Encyclopedia of Philosophy, The Literal-Nonliteral Distinction in Classical Indian Philosophy",
+      "locator": "https://plato.stanford.edu/entries/literal-nonliteral-india/",
+      "status": "reference-overview"
+    },
+    {
+      "id": "tattvarthasutra-5.29-5.30",
+      "kind": "primary",
+      "citation": "Tattvarthasutra 5.29 (5.30 in another recension)",
+      "locator": "passage identified; edition not yet registered",
+      "status": "passage-identified-edition-unverified"
+    },
+    {
+      "id": "sep-jaina",
+      "kind": "secondary",
+      "citation": "Stanford Encyclopedia of Philosophy, Jaina Philosophy",
+      "locator": "https://plato.stanford.edu/entries/jaina-philosophy/",
+      "status": "reference-overview"
+    },
+    {
+      "id": "samantabhadra-aptamimamsa-14-23-gretil",
+      "kind": "primary",
+      "citation": "Samantabhadra, Āptamīmāṃsā 14–23, GRETIL electronic text based on Gajādhara Lal Jain’s 1914 edition",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/sbhami_u.htm",
+      "status": "passage-and-edition-identified",
+      "note": "Verses 14, 16, 20, and 23 connect conditioned affirmation and negation, inexpressibility, the remaining modes, and application through viewpoints (naya). They motivate the sevenfold/indexical comparison but do not specify the repository’s TV5 value E or existential support predicates.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The module uses transliterated mode names and a project-authored mathematical reconstruction; it does not reproduce or claim to translate the Sanskrit verses."
+    },
+    {
+      "id": "rahlwes-2023-saptabhangi",
+      "kind": "secondary",
+      "citation": "Chris Rahlwes, “Silence and Contradiction in the Jaina Saptabhaṅgī,” Journal of Indian Philosophy 51.4 (2023), 473–513",
+      "locator": "https://doi.org/10.1007/s10781-023-09545-5",
+      "status": "peer-reviewed-secondary-study",
+      "note": "Used as evidence that the interpretation of silence, contradiction, sequence, and inexpressibility in the sevenfold scheme remains contested; it does not establish the repository’s three-valued support profile.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for interpretive boundaries and related work only."
+    },
+    {
+      "id": "nahata-2024-syadvada",
+      "kind": "secondary",
+      "citation": "Shree Nahata, “In Some Ways: Syādvāda as the Synthesis of Anekāntavāda and Nayavāda in Akalaṅka’s Philosophical Treatises,” Journal of Indian Philosophy (2024), 1–30",
+      "locator": "https://doi.org/10.1007/s10781-024-09575-7",
+      "status": "peer-reviewed-open-access-study",
+      "note": "Used to support the relation among many-sidedness, viewpoints, and conditioned predication. The repository’s finite Respect3 carrier and mapping of avaktavya to E remain project-authored choices.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for conceptual orientation and claim limits only."
+    },
+    {
+      "id": "nyayavatara-commentary-gretil",
+      "kind": "primary",
+      "citation": "Siddhasena Mahamati, Nyayavatara commentary, GRETIL electronic text",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_siddhasenamahAmati-nyAyAvatAra-comm.htm",
+      "status": "work-level-locator"
+    },
+    {
+      "id": "abhidharmakosabhasya-gretil",
+      "kind": "primary",
+      "citation": "Vasubandhu, Abhidharmakosabhasya, GRETIL electronic text",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_vasubandhu-abhidharmakozabhASya.htm",
+      "status": "work-level-locator"
+    },
+    {
+      "id": "sep-vasubandhu",
+      "kind": "secondary",
+      "citation": "Stanford Encyclopedia of Philosophy, Vasubandhu",
+      "locator": "https://plato.stanford.edu/entries/vasubandhu/",
+      "status": "reference-overview"
+    },
+    {
+      "id": "iep-pudgalavada",
+      "kind": "secondary",
+      "citation": "Internet Encyclopedia of Philosophy, Pudgalavada Buddhist Philosophy",
+      "locator": "https://iep.utm.edu/pudgalavada-buddhist-philosophy/",
+      "status": "reference-overview"
+    },
+    {
+      "id": "samkhyakarika-9",
+      "kind": "primary",
+      "citation": "Samkhyakarika 9",
+      "locator": "passage identified; edition not yet registered",
+      "status": "passage-identified-edition-unverified"
+    },
+    {
+      "id": "sep-naturalism-india",
+      "kind": "secondary",
+      "citation": "Stanford Encyclopedia of Philosophy, Naturalism in Classical Indian Philosophy",
+      "locator": "https://plato.stanford.edu/archives/fall2022/entries/naturalism-india/",
+      "status": "reference-overview"
+    },
+    {
+      "id": "iep-sankhya",
+      "kind": "secondary",
+      "citation": "Internet Encyclopedia of Philosophy, Sankhya",
+      "locator": "https://iep.utm.edu/sankhya/",
+      "status": "reference-overview"
+    },
+    {
+      "id": "ratnakirti-vyaptinirnaya-gretil",
+      "kind": "primary",
+      "citation": "Ratnakirti, Vyaptinirnaya in the Nibandhavali, GRETIL electronic text",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_ratnakIrti-nibandhAvalI.htm",
+      "status": "work-level-locator"
+    },
+    {
+      "id": "oeaw-vyaptinirnaya",
+      "kind": "secondary",
+      "citation": "Austrian Academy of Sciences project page, Ratnakirti's Vyaptinirnaya",
+      "locator": "https://www.oeaw.ac.at/en/ikga/research/buddhist-studies/concluded/ratnakirtis-vyaptinirnaya",
+      "status": "research-orientation"
+    },
+    {
+      "id": "internal-isabelle-port",
+      "kind": "formal",
+      "citation": "Corresponding Isabelle/HOL theory in isabelle/; mapping recorded in docs/PORTING.md and catalog/index.json",
+      "locator": "docs/PORTING.md",
+      "status": "compiler-checked-internal-provenance"
+    },
+    {
+      "id": "abhidharmakosabhasya-6.4-gretil",
+      "kind": "primary",
+      "citation": "Vasubandhu, Abhidharmakośabhāṣya VI.4 with bhāṣya, GRETIL electronic text, source-page markers 333.23–334.13",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_vasubandhu-abhidharmakozabhASya.htm",
+      "status": "passage-and-locator-identified",
+      "note": "Sanskrit reference e-text; no translation is redistributed. The passage gives pot destruction and mental analysis of water as saṃvṛtisat examples and contrasts rūpa and vedanā as paramārthasat. The module’s framework and finite-inventory complement result are modern additions.",
+      "accessed": "2026-09-19",
+      "translation_policy": "No source translation is reproduced; the English existence/recognition labels and the finite analysis framework are project-authored paraphrases and formal additions."
+    },
+    {
+      "id": "fazang-t1866-507c03-508a22-cbeta",
+      "kind": "primary",
+      "citation": "Fazang 法藏, Huayan yisheng jiaoyi fenqi zhang 華嚴一乘教義分齊章, six-characteristics and rafter-house discussion, Taishō T45 no. 1866, 507c3–508a22, CBETA XML P5",
+      "locator": "https://github.com/cbeta-org/xml-p5/blob/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T45/T45n1866.xml#L2797-L2841",
+      "status": "pinned-primary-passage",
+      "note": "Chinese primary text only; the project does not redistribute the CBETA TEI or supply a new translation. Lines 507c5–10 list the six characteristics; 507c20–508a22 develops the house/rafter case, including removal of one rafter. The Lean functional and intervention predicates remain an explicit modern reconstruction.",
+      "accessed": "2026-09-19",
+      "translation_policy": "No Chinese translation is reproduced; the six English labels and all functional, identity, and intervention predicates are project-authored paraphrases."
+    },
+    {
+      "id": "jones-2019-fazang-six-characteristics",
+      "kind": "secondary",
+      "citation": "Nicholaos Jones, “The architecture of Fazang’s six characteristics,” British Journal for the History of Philosophy 27.3 (2019), 468–491",
+      "locator": "https://doi.org/10.1080/09608788.2018.1563768",
+      "status": "peer-reviewed-secondary-study",
+      "note": "Standard study of the six characteristics in the Rafter Dialogue. Used for orientation and historical cautions, not as permission to reproduce its text or as proof that the Lean predicates are literal translations.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for secondary orientation and passage mapping only; no wording is reproduced and the Lean predicates are not presented as translations."
+    },
+    {
+      "id": "nyayasutra-1.1.40-gretil",
+      "kind": "primary",
+      "citation": "Gautama, Nyāyasūtra 1.1.40, GRETIL electronic text",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/nyaya/gaunys_u.htm",
+      "status": "passage-and-locator-identified",
+      "note": "Sanskrit reference e-text; no translation is redistributed. GRETIL warns that this converted SANSKNET text is not proofread and that word boundaries may be imperfect. The sūtra defines tarka as reasoning from a reasoned possibility toward knowledge of truth; it does not state the module’s constructive proof rule.",
+      "accessed": "2026-09-19",
+      "translation_policy": "No source translation is reproduced; the counterfactual certificate and constructive double-negation result are project-authored formal paraphrases."
+    },
+    {
+      "id": "kang-2010-tarka",
+      "kind": "secondary",
+      "citation": "Sung Yong Kang, “An Inquiry into the Definition of tarka in Nyāya Tradition and Its Connotation of Negative Speculation,” Journal of Indian Philosophy 38 (2010), 1–23",
+      "locator": "https://doi.org/10.1007/s10781-009-9078-8",
+      "status": "peer-reviewed-secondary-study",
+      "note": "Begins from Nyāyasūtra 1.1.40 and the Nyāyabhāṣya, and cautions against reducing tarka without qualification to reductio ad absurdum or a priori reasoning.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for secondary orientation and interpretive caution only; no wording is reproduced in the formalization."
+    },
+    {
+      "id": "ngagwangtashi-collected-topics-uma",
+      "kind": "primary",
+      "citation": "Ngag-dbang-bkra-shis (Ngag-wang-tra-shi), The Collected Topics of Epistemology, vol. 1, ch. 1, pp. 31–32, trans. Steven Weinberger with Lo-sang-gyal-tshan, UMA Institute, June 2017",
+      "locator": "https://uma-tibet.s3.us-east-1.amazonaws.com/public/pdf/gelug-curriculum/logic-debate/collected-topics/gomang-collected-topics/NWT_GomangCollectedTopics_Ch01-12_HowToDebate.pdf",
+      "status": "bilingual-primary-text-and-translation",
+      "note": "The Tibetan text and English translation explicitly enumerate the four possibilities between color and shape and give witnesses for each cell on pp. 31–32. The project links to the authorized UMA copy and does not redistribute it.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The published English translation is consulted to identify the four cases, but is not reproduced; Boolean cells and executable classifiers are project-authored extensional encodings."
+    },
+    {
+      "id": "magee-2019-open-source-geshe",
+      "kind": "secondary",
+      "citation": "William Magee, “Open-Source Geshe: A Digital Assistant for Tibetan Debate” (2019), pp. 3–4",
+      "locator": "https://maitripa.org/wp-content/uploads/2019/09/Open-Source_Geshe.pdf",
+      "status": "secondary-relation-taxonomy",
+      "note": "Maps mutually inclusive, mutually exclusive, three-possibility, and four-possibility comparisons and explicitly warns that the compared phenomena are not concepts or sets. This limits the module’s Boolean-predicate reading to a modern extensional audit.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for the comparison taxonomy and its warning against set identification; no source wording is reproduced."
+    },
+    {
+      "id": "gongsunlongzi-jianbai-ctext",
+      "kind": "primary",
+      "citation": "Gongsun Longzi 公孫龍子, “Jianbai lun” 堅白論 (received Chinese text), Chinese Text Project",
+      "locator": "https://ctext.org/gongsunlongzi/jian-bai-lun",
+      "status": "received-text-locator",
+      "note": "Only the received Chinese text is used as a locator. The project does not adopt or reproduce the site’s user/AI English rendering. Attribution, dating, textual layers, and interpretation remain disputed.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Only the received Chinese text is used. The site’s user/AI English rendering is neither adopted nor reproduced; all English descriptions are project-authored paraphrases."
+    },
+    {
+      "id": "graham-1967-hard-white",
+      "kind": "secondary",
+      "citation": "A. C. Graham, “The ‘hard and white’ disputations of the Chinese sophists,” Bulletin of the School of Oriental and African Studies 30.2 (1967), 358–368",
+      "locator": "https://doi.org/10.1017/S0041977X00062261",
+      "status": "peer-reviewed-secondary-study",
+      "note": "Analyzes the received essay’s seen-white/touched-hard contrast together with earlier evidence and dating questions. It supports the sensory-access motivation, not the Lean countermodel as a historical thesis.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for secondary orientation on the sight/touch reading and textual history; no source wording is reproduced."
+    },
+    {
+      "id": "uzh-2015-gongsunlongzi-philology",
+      "kind": "secondary",
+      "citation": "University of Zurich, “Origins of Logic: The Gongsunlongzi and Other Neglected Texts” (Asia & Europe Bulletin 4/2015)",
+      "locator": "https://www.aoi.uzh.ch/en/institut/geschichte/asienundeuropa/aboutus/bulletin/2015/gongsunlongzi.html",
+      "status": "research-orientation",
+      "note": "Records the work’s difficult textual history, heterogeneous composition, disputed dating, and need for philological caution.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used only to record philological uncertainty; no source wording is reproduced."
+    },
+    {
+      "id": "salikanatha-vakyarthamatrka-i-textgrid",
+      "kind": "primary",
+      "citation": "Śālikanātha, Prakaraṇapañcikā with Nārāyaṇabhaṭṭa’s Nyāyasiddhi, Vākyārthamātṛkā I, TextGrid/GRETIL electronic text",
+      "locator": "https://www.textgridrep.org/browse/49nsk.0",
+      "status": "passage-and-locator-identified",
+      "note": "Vākyārthamātṛkā I explicitly discusses anvitābhidhāna and abhihitānvaya. The SANSKNET-derived e-text is converted from a custom Devanāgarī encoding, has no interpretive markup, and is not proofread; it is a locator, not a critical edition or project translation.",
+      "accessed": "2026-09-19",
+      "translation_policy": "No source translation is reproduced; the two typed computation architectures and their bridge are project-authored formal paraphrases."
+    },
+    {
+      "id": "saxena-2018-mimamsa-verbal-cognition",
+      "kind": "secondary",
+      "citation": "Shishir Rajan Saxena, Linguistic and Phenomenological Theories of Verbal Cognition in Mīmāṃsā, PhD thesis, University of Cambridge (2018)",
+      "locator": "https://doi.org/10.17863/CAM.37004",
+      "status": "doctoral-critical-study-and-translation",
+      "note": "Identifies Vākyārthamātṛkā I as the locus classicus for anvitābhidhāna and provides translation/paraphrase, with an edition and translation of Sucarita’s Kāśikāṭīkā response on Ślokavārttika Vākyādhikaraṇa 110cd–112ab. The thesis is not redistributed.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used to locate and distinguish the two historical positions; its translation/paraphrase and critical text are not reproduced."
+    },
+    {
+      "id": "sep-tsongkhapa-object-negation",
+      "kind": "secondary",
+      "citation": "Stanford Encyclopedia of Philosophy, “Tsongkhapa,” section 3 (“Mature Period”), discussion of dgag bya and the paired errors khyab che ba / khyab chung ba",
+      "locator": "https://plato.stanford.edu/entries/tsongkhapa/",
+      "status": "secondary-orientation-specific-section",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used only to orient the overreach/underreach distinction; no SEP wording or Tibetan translation is reproduced in the formalization."
+    },
+    {
+      "id": "garfield-thakchoe-2011-object-negation",
+      "kind": "secondary",
+      "citation": "Jay L. Garfield and Sonam Thakchöe, “Identifying the Object of Negation and the Status of Conventional Truth: Why the dGag Bya Matters So Much to Tibetan Mādhyamikas,” in The Cowherds, Moonshadows: Conventional Truth in Buddhist Philosophy (Oxford University Press, 2011), chapter 5, pp. 73–88",
+      "locator": "https://academic.oup.com/book/26720/chapter-abstract/195555247",
+      "status": "peer-reviewed-secondary-orientation",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used as secondary orientation only; the Lean predicates are project-authored extensional paraphrases and are not presented as translations of a primary Tibetan passage."
+    },
+    {
+      "id": "nyayakusumanjali-5-gretil",
+      "kind": "primary",
+      "citation": "Received Nyāyakusumāñjali, fifth section, verse 5.1 and prose beginning kṣityādi kartṛpūrvakaṃ kāryatvāt (GRETIL electronic text, Sansknet input)",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/nyaya/udnyku5u.htm",
+      "status": "passage-identified-unproofread-electronic-text",
+      "note": "GRETIL labels this reference text unproofread and does not name a critical edition; verse/prose authorship is kept open in light of Ruzsa 2022.",
+      "accessed": "2026-09-19",
+      "translation_policy": "No source translation is reproduced; the maker, qualification, and pervasion predicates are project-authored English paraphrases of a deliberately weaker argument schema."
+    },
+    {
+      "id": "ruzsa-2022-kusumanjali",
+      "kind": "secondary",
+      "citation": "Ferenc Ruzsa, “Structure and Authorship of the Kusumāñjali,” Journal of Indian Philosophy 50 (2022), 803–819",
+      "locator": "https://doi.org/10.1007/s10781-022-09520-6",
+      "status": "peer-reviewed-open-access-study",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used to qualify the attribution and structure of the received verse/prose work, not as a source of a Lean-level translation."
+    },
+    {
+      "id": "ashtadhyayi-1.4.2-sanskrit-library",
+      "kind": "primary",
+      "citation": "Pāṇini, Aṣṭādhyāyī 1.4.2, vipratiṣedhe paraṃ kāryam, Sanskrit Library digital sūtra record",
+      "locator": "https://sanskritlibrary.org/grammatical/data/A.1.4.2.html",
+      "status": "passage-and-institutional-locator-identified",
+      "note": "The locator fixes the sūtra text; the formalization does not claim that it is a critical edition or that one conflict policy exhausts the commentarial tradition.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The module paraphrases paraṃ kāryam only as motivation for a configurable priority relation; ranks, lists, and termination are modern formal infrastructure."
+    },
+    {
+      "id": "rajpopat-2023-conflict-resolution",
+      "kind": "secondary",
+      "citation": "Rishi Rajpopat, “The Evolution of Conflict-Resolution Tools in the Early Pāṇinian Tradition,” Bhasha 2.1 (2023), 31–58",
+      "locator": "https://doi.org/10.30687/bhasha/2785-5953/2023/01/002",
+      "status": "peer-reviewed-open-access-study",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for historical orientation on rule conflict and the conventional serial-order reading; the executable rewrite system remains a project-authored abstraction."
+    },
+    {
+      "id": "dignaga-ps1-steinkellner-2014",
+      "kind": "primary",
+      "citation": "Ernst Steinkellner, Dignāga’s Pramāṇasamuccaya, Chapter 1: A Revision of the Sanskrit Text (Vienna, 2014), a hypothetical Sanskrit reconstruction from the Tibetan translations, fragments, and Jinendrabuddhi’s Ṭīkā",
+      "locator": "https://www.oeaw.ac.at/fileadmin/Institute/IKGA/PDF/digitales/dignaga_PS_1.pdf",
+      "status": "research-edition-and-passages-identified",
+      "note": "Relevant loci are PS(V) 1.3c and 1.7c–8b for perception/perceptual semblance, and 1.6ab plus 1.9–12 (especially 1.11c–d) for self-awareness and recollection.",
+      "accessed": "2026-09-19",
+      "translation_policy": "No edition translation is reproduced; the Lean modules state project-authored English paraphrases and explicitly separate their modern predicates from the reconstructed Sanskrit."
+    },
+    {
+      "id": "dharmakirti-nyayabindu-1.4-1.6-gretil",
+      "kind": "primary",
+      "citation": "Dharmakīrti, Nyāyabindu 1.4–1.6, GRETIL electronic text based on Svāmī Dwarikadas Shastri, Nyāyabindu Prakaraṇam-kārikā (Bauddha Bharati, 1994), pp. 42–50",
+      "locator": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/buddh/bsa057_u.htm",
+      "status": "passage-and-edition-identified",
+      "accessed": "2026-09-19",
+      "translation_policy": "The nonconceptual/nonerror labels are project-authored paraphrases of the cited Sanskrit; no full translation or equivalence between error and the module’s truth predicate is asserted."
+    },
+    {
+      "id": "mascarello-2025-svasamvedana",
+      "kind": "secondary",
+      "citation": "Chiara Mascarello, “Dignāga and Later Developments,” in Philosophica. Nuova serie (Edizioni Ca’ Foscari, 2025)",
+      "locator": "https://doi.org/10.30687/978-88-6969-929-0/003",
+      "status": "peer-reviewed-open-access-study",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for orientation on self-awareness, cognition’s two aspects, and memory; the trace and uniqueness fields are modern formal decompositions rather than translations."
+    },
+    {
+      "id": "lee-2001-vyakhyayukti-tibetan",
+      "kind": "primary",
+      "citation": "Jong Cheol Lee, The Tibetan Text of the Vyākhyāyukti of Vasubandhu: Critically Edited from the Cone, Derge, Narthang and Peking Editions, Bibliotheca Indologica et Buddhologica 8 (Tokyo: Sankibo Press, 2001), ISBN 4796310088",
+      "locator": "https://ci.nii.ac.jp/ncid/BA54638711?l=en",
+      "status": "critical-edition-bibliography-verified",
+      "note": "The catalogue record verifies the edition and witnesses; the online locator does not supply the edition’s full text.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The edition fixes the Tibetan textual basis; this project does not translate or redistribute it, and uses project-authored English task descriptions."
+    },
+    {
+      "id": "ueno-2021-vyakhyayukti",
+      "kind": "secondary",
+      "citation": "Makio Ueno, “The Buddha’s Words and Their Interpretations in Vasubandhu’s Vyākhyāyukti,” in Takami Inoue and Imre Hamar (eds.), The Buddha’s Words and Their Interpretations (Kyoto: Ōtani University, 2021), pp. 95–111, especially pp. 95–96",
+      "locator": "https://www.otani.ac.jp/news/2021/u10fi9000000q5jn-att/nab3mq000008ctlv.pdf",
+      "status": "institutional-full-text-with-primary-quotation",
+      "note": "Ueno identifies Vyākhyāyukti saṃgrahaśloka 1 and prints a Sanskrit witness quoted in Abhayākaragupta’s Āmnāyamañjarī, with variants from Haribhadra’s Abhisamayālaṃkārālokā.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The five technical task names follow the cited verse and Ueno’s explanation; the Lean coverage predicates and certificate semantics are project-authored paraphrases."
+    },
+    {
+      "id": "uva-vyakhyayukti-30b",
+      "kind": "secondary",
+      "citation": "University of Virginia Mandala, “Sūtra Commentaries in Tibetan Translation,” Vyākhyāyukti five-component summary at Tibetan folio 30b",
+      "locator": "https://texts.mandala.library.virginia.edu/book_pubreader/15729",
+      "status": "university-research-overview-with-folio-locator",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used to cross-check the five-component list and folio locator; the module does not reproduce Mandala’s English wording."
+    },
+    {
+      "id": "sen-chatterjee-2010-navya-nyaya",
+      "kind": "secondary",
+      "citation": "Prabal Kumar Sen and Amita Chatterjee, “Navya-Nyāya Logic,” Journal of the Indian Council of Philosophical Research 27.2 (2010), 77–99, especially pp. 80–85",
+      "locator": "https://www.cs.ox.ac.uk/people/michael.wooldridge/pubs/icpr2011.pdf",
+      "status": "peer-reviewed-full-text-secondary-study",
+      "note": "Pages 83–85 distinguish delimitors, relation-qualified presence and absence, the counterpositive or negatum (pratiyogin), and the locus (anuyogin). This is secondary orientation rather than a primary passage edition.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The English labels orient the four separately typed Lean indices; the Lean relations and certificate fields are project-authored simplifications, and no source wording is reproduced."
+    },
+    {
+      "id": "ganeri-2008-navya-regimentation",
+      "kind": "secondary",
+      "citation": "Jonardon Ganeri, “Towards a Formal Regimentation of the Navya-Nyāya Technical Language I,” in Mihir K. Chakraborty, Benedikt Löwe, Madhabendra Nath Mitra, and Sundar Sarukkai (eds.), Logic, Navya-Nyāya & Applications: Homage to Bimal Krishna Matilal, Studies in Logic 15 (London: College Publications, 2008), 109–124, especially pp. 111–121",
+      "locator": "https://www.columbia.edu/itc/mealac/pollock/sks/papers/Ganeri%28Matilal%20vol%29.pdf",
+      "status": "scholarly-chapter-university-full-text",
+      "note": "The chapter’s formal vocabulary includes locus or substratum, delimiter (avacchedaka), counterpositive (pratiyogin), relation expressions, and relational absence; it does not present the repository’s four-place predicate or detection certificate.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used as formal and terminological orientation only; Sanskrit terms are retained where needed to disambiguate the project-authored predicates."
+    },
+    {
+      "id": "sep-early-modern-india-abhava",
+      "kind": "secondary",
+      "citation": "Jonardon Ganeri, “Analytic Philosophy in Early Modern India,” Stanford Encyclopedia of Philosophy (substantive revision 5 November 2023), sections 11.2–11.3",
+      "locator": "https://plato.stanford.edu/entries/early-modern-india/",
+      "status": "reference-overview-specific-sections",
+      "note": "Section 11.2 identifies the locus, counterpositive, and identity or nonidentity relation of an absence; section 11.3 identifies the property delimiting counterpositiveness (pratiyogitāvacchedaka).",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used as secondary orientation for the four indices; the module does not reproduce SEP wording or claim a direct translation of the Manual of Reason."
+    },
+    {
+      "id": "sriharsa-jha-1913-sweets-refutation",
+      "kind": "primary",
+      "citation": "Ganganatha Jha (trans.), The Sweets of Refutation: An English Translation of the Khaṇḍanakhaṇḍakhādya of Shri-Harṣa (Allahabad: Indian Thought Series, 1913), vol. 1, chapter I §14, paras. 257–259, translation pp. 138–140 (source-edition page references 229–232)",
+      "locator": "https://archive.org/details/khandana-khanda-khadya",
+      "status": "historical-translation-scan-passage-checked",
+      "note": "The checked passage gives the chance-correct five-shell answer and mist-for-smoke inference. Jha’s preface cautions that some passages may be imperfectly understood, so the scan is treated as a historical translation witness rather than a critical edition.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The Lean shell and mist models are deliberately changed, finite paraphrases of the examples; no translation wording is reproduced and no theorem is presented as a Sanskrit edition."
+    },
+    {
+      "id": "sep-sriharsa-das-2022",
+      "kind": "secondary",
+      "citation": "Nilanjan Das, “Śrīharṣa,” Stanford Encyclopedia of Philosophy, Fall 2022 archive, sections 1.2 and 2.1–2.3",
+      "locator": "https://plato.stanford.edu/archives/fall2022/entries/sriharsa/",
+      "status": "scholarly-reference-passage-map",
+      "note": "Section 1.2 distinguishes extensional adequacy, non-circularity, and uniformity; sections 2.1–2.3 cite KKh 207–208, 211, 213, 230, and 238 for accidental truth, overextension, circularity, and uniformity. The entry defines KKh as the 2010 reprint of Svāmī Yogīndrānanda’s 1979 edition.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used to map modern audit labels to named criteria and passage numbers; the Boolean profile relation and relevant-alternatives semantics remain project-authored paraphrases."
+    },
+    {
+      "id": "wonhyo-simmun-muller-2016",
+      "kind": "primary",
+      "citation": "Wŏnhyo, Ten Approaches to the Harmonization of Doctrinal Disputes (Simmun hwajaeng non 十門和諍論), trans. A. Charles Muller, web edition updated 20 September 2016, introduction and §§2.1–2.4",
+      "locator": "https://www.acmuller.net/kor-bud/simmun_hwajaeng_non.html",
+      "status": "fragmentary-primary-text-and-translation",
+      "note": "Muller states that only fragments of the beginning survive, with gaps, and that the translation is reconstructed from the partial preface inscription and five Haeinsa printing blocks (HBJ/HPC 1.838–841). The extant text treats existence and emptiness and the buddha-nature dispute, but supplies no sheaf-style coverage or gluing operation.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Transliterated terms and titles follow Muller; the Lean contexts and gluing predicates are project-authored analogies and do not translate the fragmentary text."
+    },
+    {
+      "id": "muller-2015-hwajaeng",
+      "kind": "secondary",
+      "citation": "A. Charles Muller, “Wŏnhyo’s Approach to Harmonization of the Mahayana Doctrines (Hwajaeng),” Acta Koreana 18.1 (2015), 9–44, especially pp. 10–13, 22–29, and 34",
+      "locator": "https://doi.org/10.18399/acta.2015.18.1.001",
+      "status": "peer-reviewed-full-text-secondary-study",
+      "note": "Muller characterizes hwajaeng as inquiry into divergent positions’ assumptions, aims, backgrounds, and precise points of divergence; he records Simmun hwajaeng non as fragmentary at HPC 1.838–841. The study does not support overlap agreement, coverage, or gluing as Wŏnhyo’s own formal method.",
+      "accessed": "2026-09-19",
+      "translation_policy": "Used for bounded conceptual orientation only; the Lean interface is not presented as a translation or historical proof theory."
+    },
+    {
+      "id": "mimamsasutra-3.3.14-textgrid",
+      "kind": "primary",
+      "citation": "Jaimini, Mīmāṃsāsūtra 3.3.14, TextGrid/GRETIL electronic text based on B. D. Basu, Sacred Books of the Hindus 27 (Allahabad, 1923–1925)",
+      "locator": "https://hdl.handle.net/21.11113/0000-0016-D0A3-4",
+      "status": "passage-and-edition-identified",
+      "note": "The Sanskrit sūtra enumerates six grounds—śruti, liṅga, vākya, prakaraṇa, sthāna, and samākhyā—and states their relative weakening because later grounds are more remote from meaning. TextGrid records the TEI version dated 2020-07-31 and revision dated 2025-05-08.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The module paraphrases the six labels and relative ordering. Its numeric ranks, tie handling, resolver, and examples are modern formal machinery; no translation of Śabara or surrounding examples is reproduced."
+    },
+    {
+      "id": "tang-2018-xuanzang-inference",
+      "kind": "secondary",
+      "citation": "Mingjun Tang, “Materials for the Study of Xuanzang’s Inference of Consciousness-only (wei shi bi liang 唯識比量),” Wiener Zeitschrift für die Kunde Südasiens 56–57 (2015–2018), 143–198",
+      "locator": "https://www.austriaca.at/0xc1aa5572_0x003aa075.pdf",
+      "status": "scholarly-source-edition-and-passage-mapping",
+      "note": "Especially pp. 143–150 and edited materials Texts 1.1, 1.9, and 5.2. Tang documents the three qualifications, the Wŏnhyo counter-inference, and unresolved authenticity and interpretation questions.",
+      "accessed": "2026-09-19",
+      "translation_policy": "The module paraphrases argumentative roles and qualification scopes; it does not reproduce Tang’s translations or present one disputed historical verdict as settled."
+    }
+  ]
+}

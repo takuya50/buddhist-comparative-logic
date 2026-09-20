@@ -1,0 +1,112 @@
+/- SPDX-License-Identifier: Apache-2.0 -/
+
+import BuddhistComparativeLogic.Release
+import BuddhistComparativeLogic.Experimental
+import BuddhistComparativeLogic.Buddhist.Abhidharma.Analysis
+import BuddhistComparativeLogic.Buddhist.Yogacara.Alambanapariksa
+import BuddhistComparativeLogic.Buddhist.Pramana.Anumana
+import BuddhistComparativeLogic.Buddhist.Pramana.AnupalabdhiKinds
+import BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang.Antidote
+import BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang.AntidoteSelection
+import BuddhistComparativeLogic.Buddhist.HeartSutra.AssumptionAudit
+import BuddhistComparativeLogic.Buddhist.Pramana.Apoha
+import BuddhistComparativeLogic.Buddhist.Pramana.ApohaFeatures
+import BuddhistComparativeLogic.Buddhist.Pramana.ApohaSelection
+import BuddhistComparativeLogic.Buddhist.HeartSutra.ArgumentPipeline
+import BuddhistComparativeLogic.Buddhist.EarlyBuddhism.Avyakata
+import BuddhistComparativeLogic.Buddhist.HeartSutra.BeliefRevision
+import BuddhistComparativeLogic.Comparative.Grammar.Bhartrhari
+import BuddhistComparativeLogic.Buddhist.Pramana.Tibetan.BsdusGrwa
+import BuddhistComparativeLogic.Core.CatuskotiK3FDE
+import BuddhistComparativeLogic.Buddhist.HeartSutra.Coverage
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.CessationArgument
+import BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang.CognitiveAntidote
+import BuddhistComparativeLogic.Core.Decide
+import BuddhistComparativeLogic.Buddhist.Pramana.Dharmakirti
+import BuddhistComparativeLogic.Buddhist.Pramana.DirectedMomentariness
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.DependenceCoverage
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.DependenceModes
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.DependentOrigination
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.Ekanekaviyoga
+import BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Fazang.Mereology
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.EmptinessInference
+import BuddhistComparativeLogic.Core.FDECalculus
+import BuddhistComparativeLogic.Core.FDEProof
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.FourfoldCausation
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.Gamana
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.GamanaIntervals
+import BuddhistComparativeLogic.Comparative.ChineseThought.HardWhite
+import BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Jizang
+import BuddhistComparativeLogic.Comparative.Skepticism.Jayarasi
+import BuddhistComparativeLogic.Buddhist.Pramana.InferenceScope
+import BuddhistComparativeLogic.Core.Ineffable
+import BuddhistComparativeLogic.Comparative.Jaina.JainaChange
+import BuddhistComparativeLogic.Comparative.Jaina.JainaInference
+import BuddhistComparativeLogic.Buddhist.Pramana.Ksanabhangasiddhi
+import BuddhistComparativeLogic.Buddhist.HeartSutra.Longer
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.MMK1
+import BuddhistComparativeLogic.Core.MatrixTransport
+import BuddhistComparativeLogic.Core.MVExample
+import BuddhistComparativeLogic.Comparative.Mimamsa.MimamsaEpistemology
+import BuddhistComparativeLogic.Comparative.Mimamsa.MimamsaSentenceMeaning
+import BuddhistComparativeLogic.Comparative.Mimamsa.MimamsaViniyoga
+import BuddhistComparativeLogic.Buddhist.Pramana.Momentariness
+import BuddhistComparativeLogic.Comparative.ChineseThought.MohistCanons
+import BuddhistComparativeLogic.Comparative.Jaina.NayaDynamics
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.NegandumCalibration
+import BuddhistComparativeLogic.Comparative.Nyaya.Nyaya
+import BuddhistComparativeLogic.Comparative.Nyaya.Nyayakusumanjali
+import BuddhistComparativeLogic.Comparative.Nyaya.NavyaNyayaAbsence
+import BuddhistComparativeLogic.Buddhist.Pramana.OtherMinds
+import BuddhistComparativeLogic.Buddhist.HeartSutra.PathModel
+import BuddhistComparativeLogic.Buddhist.HeartSutra.PathDynamics
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.Prasanga
+import BuddhistComparativeLogic.Comparative.Grammar.PaniniDerivation
+import BuddhistComparativeLogic.Buddhist.Abhidharma.Pudgala
+import BuddhistComparativeLogic.Buddhist.HeartSutra.PremiseCertificates
+import BuddhistComparativeLogic.Buddhist.Pramana.PramanaSynthesis
+import BuddhistComparativeLogic.Buddhist.Pramana.Pramanasamuccaya
+import BuddhistComparativeLogic.Buddhist.Pramana.Pramanavarttika
+import BuddhistComparativeLogic.Buddhist.Yogacara.PramanaYogacara
+import BuddhistComparativeLogic.Buddhist.HeartSutra.RecensionAlignment
+import BuddhistComparativeLogic.Buddhist.Pramana.Pratyaksabhasa
+import BuddhistComparativeLogic.Buddhist.Yogacara.Sahopalambha
+import BuddhistComparativeLogic.Buddhist.HeartSutra.Sanskrit
+import BuddhistComparativeLogic.Comparative.Jaina.Saptabhangi
+import BuddhistComparativeLogic.Buddhist.Pramana.Sambandhapariksa
+import BuddhistComparativeLogic.Buddhist.Abhidharma.Sarvastivada
+import BuddhistComparativeLogic.Comparative.Samkhya.Satkaryavada
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.Sokuhi
+import BuddhistComparativeLogic.Comparative.Vedanta.Sriharsa
+import BuddhistComparativeLogic.Buddhist.Yogacara.Svasamvedana
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.SupportingArguments
+import BuddhistComparativeLogic.Buddhist.Pramana.SvatantraPrasanga
+import BuddhistComparativeLogic.Comparative.Nyaya.Tarka
+import BuddhistComparativeLogic.Comparative.Nyaya.Tattvacintamani
+import BuddhistComparativeLogic.Buddhist.Pramana.Tattvasamgraha
+import BuddhistComparativeLogic.Buddhist.Pramana.Tibetan.Debate
+import BuddhistComparativeLogic.Buddhist.Pramana.Tibetan.Definitions
+import BuddhistComparativeLogic.Core.UniversalDesignationFDE
+import BuddhistComparativeLogic.Core.UniversalDesignationMore
+import BuddhistComparativeLogic.Buddhist.Pramana.Vadanyaya
+import BuddhistComparativeLogic.Buddhist.Madhyamaka.Vigraha
+import BuddhistComparativeLogic.Buddhist.Yogacara.Vimsatika
+import BuddhistComparativeLogic.Buddhist.Yogacara.VimsatikaModels
+import BuddhistComparativeLogic.Buddhist.Hermeneutics.Vyakhyayukti
+import BuddhistComparativeLogic.Buddhist.Pramana.Vyaptinirnaya
+import BuddhistComparativeLogic.Comparative.ChineseThought.WhiteHorse
+import BuddhistComparativeLogic.Buddhist.KoreanBuddhism.WonhyoHwajaeng
+import BuddhistComparativeLogic.Buddhist.ChineseBuddhism.Xuanzang.Inference
+import BuddhistComparativeLogic.Buddhist.Abhidharma.Yamaka
+import BuddhistComparativeLogic.Buddhist.Yogacara.YogacaraConsciousness
+import BuddhistComparativeLogic.Buddhist.Yogacara.YogacaraSynthesis
+
+/-!
+# Buddhist and comparative Asian logic
+
+This is the aggregate import for the Lean 4 port and its extensions.  Its
+transitive import closure contains the counterpart of every theory in the
+Isabelle `Buddhist_Comparative_Logic` session together with 78 Lean-only modules; see
+`docs/PORTING.md` for the theory-by-theory map and `docs/LEAN_PROGRESS.md` for the
+additional argument interfaces.
+-/

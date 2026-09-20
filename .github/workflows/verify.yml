@@ -1,0 +1,87 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Continuous verification for the standalone repository.
+
+name: verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install metadata validators
+        run: python3 -m pip install --disable-pip-version-check reuse==5.1.1 cffconvert==2.0.0
+
+      - name: Validate release metadata
+        run: |
+          python3 tools/check_license.py
+          cffconvert --validate
+          python3 tools/check_publication.py
+
+  verify:
+    needs: metadata
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install metadata validators
+        run: python3 -m pip install --disable-pip-version-check reuse==5.1.1 cffconvert==2.0.0
+
+      # install-isabelle.sh checks the cached tarball's digest before doing
+      # anything else, so a restored cache short-circuits the 1.2 GB download,
+      # and a present installation short-circuits the extraction too.
+      - name: Cache Isabelle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/isabelle
+            ~/.local/opt/Isabelle2025-2
+          key: isabelle-2025-2-${{ runner.os }}-${{ hashFiles('tools/install-isabelle.sh') }}
+
+      - name: Cache the Lean toolchain
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/lean
+            ~/.local/opt/lean-4.32.0-linux
+          key: lean-4-32-0-${{ runner.os }}-${{ hashFiles('tools/check-lean.sh', 'lean-toolchain') }}
+
+      # The generated document is typeset with lualatex because the theory
+      # text contains CJK characters; luatexja and the IPA fonts are what
+      # isabelle/document/root.tex asks for.
+      - name: TeX for the generated document
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-luatex texlive-latex-extra texlive-fonts-recommended \
+            texlive-lang-japanese fonts-ipafont
+
+      - name: Install Isabelle
+        run: sh tools/install-isabelle.sh
+
+      # verify.sh is the same command the README tells a reader to run: the
+      # 'sorry' gate, generated-data checks, the session, the PDF, the Lean
+      # port, reproducibility audits, standalone release guards, and metadata validation.
+      - name: Verify
+        run: |
+          export PATH="$HOME/.local/opt/Isabelle2025-2/bin:$PATH"
+          sh verify.sh
+
+      - name: Upload the generated document
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: document
+          path: output/document.pdf
+          if-no-files-found: warn

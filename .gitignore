@@ -1,0 +1,47 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# Isabelle output
+/output/
+
+# Lean build artefacts (generated C and object files live under .lake)
+/.lake/
+
+# Python tooling caches
+__pycache__/
+*.py[cod]
+/.venv/
+/venv/
+/.cache/
+
+# Local editor and operating-system files
+.DS_Store
+*~
+*.swp
+*.swo
+/.idea/
+/.vscode/
+
+# Local environment, credentials, and private keys
+.env
+.env.*
+!.env.example
+!.env.sample
+/.envrc
+/.direnv/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Temporary packaging and local distribution work
+/outputs/
+/dist/
+/tmp/
+/temp/
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+
+# The paper and its separate licence notice are never part of this software history.
+/paper/
+/LICENSES/LicenseRef-Paper-Draft-No-License.txt

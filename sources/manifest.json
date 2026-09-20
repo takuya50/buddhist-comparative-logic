@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "adopted_text_witness": {
+    "id": "t251-received-262",
+    "work": "Prajnaparamitahrdaya, Xuanzang-attributed short Chinese recension",
+    "canonical_reference": "Taisho T08, no. 251, p. 848c6-22",
+    "project_file": "sources/text/heart-sutra-t251-received-262.txt",
+    "project_transcription": "The whitespace-free text is assembled from the 31-clause table in docs/STATUS.md; it was not copied from the external CBETA XML file.",
+    "normalization": "Exact UTF-8 bytes, no BOM, one final LF, no punctuation or spaces",
+    "body_codepoints_excluding_final_lf": 262,
+    "sha256_including_final_lf": "efdccfe767855109acf0c7fa00b82a8851b431114eaa5b25a309aa4fd05a65c7",
+    "title_and_colophon": "HS00 and HS30 are represented in docs/STATUS.md and the proof sources but excluded from this 262-codepoint body file.",
+    "edition_status": "Project-adopted Japanese-style received witness; not the exact Taisho T251 body, not a named Japanese edition, and not a critical edition",
+    "variant_policy": [
+      "HS22 reads 遠離一切顛倒夢想. The pinned CBETA running text reads 遠離顛倒夢想; added 一切 accounts for 262 rather than 260 body codepoints.",
+      "Mantra differences from CBETA running text: 帝 to 諦 four times, 般羅 to 波羅 twice, 莎婆 to 薩婆 once. None changes length.",
+      "At 0848c22 the apparatus distinguishes CBETA 莎婆, Taisho 僧莎, and Song/Yuan/Ming 薩婆. CBETA's edited running text is not identical to the Taisho witness.",
+      "Punctuation and spacing are editorial and are excluded from theorem-bearing character counts."
+    ],
+    "external_comparison": {
+      "name": "CBETA XML P5, T08n0251",
+      "repository_commit": "dbdea41071e1e260ad84b72faefd4587333cf76d",
+      "url": "https://github.com/cbeta-org/xml-p5/blob/dbdea41071e1e260ad84b72faefd4587333cf76d/T/T08/T08n0251.xml",
+      "accessed": "2026-09-20",
+      "xml_sha256": "f5507df86309f861ef2b92e9ba9db985c6db0ad357553599c6e921e15deca761",
+      "running_body_codepoints": 260,
+      "use": "Bibliographic and variant comparison only; the external XML is not redistributed here.",
+      "external_terms": "The cited file carries CBETA's own availability notice."
+    },
+    "checked_by": "check_text.py"
+  }
+}

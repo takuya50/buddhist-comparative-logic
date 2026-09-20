@@ -1,0 +1,57 @@
+(* SPDX-License-Identifier: Apache-2.0 *)
+session Buddhist_Comparative_Logic = HOL +
+  description
+    "Machine-checked formalizations of Buddhist and comparative Asian logic.
+     The Heart Sutra is one case study within a broader library of logical,
+     epistemological, and debate interfaces. The session is a definitional
+     reconstruction, not a proof of any philosophical or religious doctrine."
+  options [timeout = 1800]
+  directories
+    "Buddhist/Abhidharma"
+    "Buddhist/DiamondSutra"
+    "Buddhist/EarlyBuddhism"
+    "Buddhist/HeartSutra"
+    "Buddhist/Madhyamaka"
+    "Buddhist/Pramana"
+    "Buddhist/Yogacara"
+    "Comparative/Jaina"
+    "Core"
+  theories
+    HeartSutra_Text
+    HeartSutra_Dharma
+    ManyValuedLogic
+    Dignaga_Hetucakra
+    Yogacara_Vimsatika
+    Sarvastivada_ThreeTimes
+    Madhyamaka_Gamana
+    FiniteLogics
+    Dharmakirti_Reasons
+    Dignaga_Apoha
+    Catuskoti
+    HeartSutra_Mantra
+    HeartSutra_Connexive
+    Madhyamaka_Jizang
+    Madhyamaka_MMK1
+    HeartSutra_Emptiness
+    PlurivalentSemantics
+    Jaina_Saptabhangi
+    ManyValuedLogicExample
+    HeartSutra_Path
+    Madhyamaka_MMK24
+    UniversalDesignation
+    FiniteDecisionProcedures
+    HeartSutra_Coverage
+    HeartSutra_TwoTruths
+    UniversalDesignationFDE
+    HeartSutra_PathModel
+    HeartSutra_Anumana
+    Avyakata
+    FDEProofTheory
+    DiamondSutra_Sokuhi
+    HeartSutra_Sanskrit
+    Madhyamaka_StandpointSemantics
+    Madhyamaka_Vigrahavyavartani
+    HeartSutra_LongerRecension
+  document_files
+    "root.tex"
+    "root.bib"

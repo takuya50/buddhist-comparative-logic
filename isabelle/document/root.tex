@@ -1,0 +1,46 @@
+% SPDX-License-Identifier: Apache-2.0
+% Build with lualatex (tools/build.sh --pdf sets document_build=lualatex):
+% the theory text contains CJK characters, typeset via luatexja with an IPA font.
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{luatexja-fontspec}
+\setmainjfont{IPAMincho}
+\setsansjfont{IPAGothic}
+\usepackage{isabelle,isabellesym}
+\usepackage{amssymb}
+\usepackage{pdfsetup}
+
+\begin{document}
+
+\title{Buddhist and Comparative Asian Logic\\
+Formalizations\\
+Isabelle/HOL Technical Reference Manual\\[0.5ex]
+\large\texttt{Buddhist\_Comparative\_Logic}}
+\author{}
+\date{}
+\maketitle
+
+\section*{About this manual}
+This technical reference manual is the generated theory listing for the
+\texttt{Buddhist\_Comparative\_Logic} Isabelle session in the Buddhist and
+Comparative Asian Logic Formalizations software corpus. The session includes
+generic logical infrastructure and formalizations across Buddhist and
+comparative Asian traditions. The Heart Sutra is one detailed textual case
+study: it uses a project-adopted 262-character received witness of the
+Xuanzang-attributed Prajnaparamitahrdaya, not the 260-character Taisho body.
+The reconstruction is parametric over classical, Belnap--Dunn FDE, and
+Priest's FDE-plus-fifth-value semantics. This manual is not a paper or
+preprint, and it is not a proof of any Buddhist doctrine; see
+\texttt{docs/STATUS.md} for the wording rules and the clause-by-clause
+coverage table.
+
+\tableofcontents
+
+% generated text of all theories
+\input{session}
+
+\nocite{*}
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}

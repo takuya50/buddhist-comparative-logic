@@ -1,0 +1,43 @@
+'BuddhistComparativeLogic.FDEProof.fde_variable_sharing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fde5_is_fde_plus_containment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fde_dec_correct' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fdeCountermodel_sound' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fdeCountermodel_none_iff' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fdeCountermodel_complete' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fde5Countermodel_sound' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fde5Countermodel_none_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.fde5Countermodel_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BuddhistComparativeLogic.FDEProof.countermodel_explosion' depends on axioms: [propext]
+'BuddhistComparativeLogic.FDEProof.countermodel_conj_elim' depends on axioms: [propext]
+'BuddhistComparativeLogic.FDEProof.countermodel5_atom_escape' depends on axioms: [propext]
+'BuddhistComparativeLogic.FDEProof.countermodel5_same_atoms' depends on axioms: [propext]
+'BuddhistComparativeLogic.Emptiness.sarva_dharma_sunya' does not depend on any axioms
+'BuddhistComparativeLogic.EmptinessData.sarva_dharma_sunya_from_core' does not depend on any axioms
+'BuddhistComparativeLogic.emptiness_without_mmk' does not depend on any axioms
+'BuddhistComparativeLogic.emptiness_without_pratitya' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.emptiness_core_relative_independence' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.hs10_fde_formula_iff_B' depends on axioms: [propext]
+'BuddhistComparativeLogic.Hetucakra.Anumana.wheel_valid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BuddhistComparativeLogic.Hetucakra.no_deductive_soundness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BuddhistComparativeLogic.InferenceScope.uniformity_iff_thesis_under_marks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BuddhistComparativeLogic.Saptabhangi.saptabhangi_not_truth_functional' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.Saptabhangi.all_seven_satisfiable' does not depend on any axioms
+'BuddhistComparativeLogic.Saptabhangi.seventh_mode_needs_three_nayas' does not depend on any axioms
+'BuddhistComparativeLogic.Saptabhangi.seventh_mode_supports_every_mode' depends on axioms: [propext]
+'BuddhistComparativeLogic.Saptabhangi.naya_small_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BuddhistComparativeLogic.Saptabhangi.representativeNayas_preserve_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BuddhistComparativeLogic.Saptabhangi.representativeNayas_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BuddhistComparativeLogic.Saptabhangi.naya_small_model_bound_sharp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BuddhistComparativeLogic.Saptabhangi.observation_variants_same_profile' does not depend on any axioms
+'BuddhistComparativeLogic.Saptabhangi.observation_variants_different_relation' depends on axioms: [propext, Quot.sound]
+'BuddhistComparativeLogic.Saptabhangi.naya_profile_cannot_recover_relation' depends on axioms: [propext, Quot.sound]
