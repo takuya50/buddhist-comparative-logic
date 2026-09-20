@@ -15,8 +15,8 @@ release guards, REUSE, and CFF validation).
 
 The code repository is
 [takuya50/buddhist-comparative-logic](https://github.com/takuya50/buddhist-comparative-logic).
-It is **PUBLIC**. The first GitHub software release, `v0.1.0`, is in
-preparation; its release and tag have not yet been created.
+It is **PUBLIC**. The first GitHub software release, `v0.1.0`, was published
+at commit `e3fd4623cb918540adf48fbcf6e390aa36e71d82`.
 The software identity is:
 
 | Field | Value |
@@ -25,21 +25,25 @@ The software identity is:
 | Display name | Buddhist and Comparative Asian Logic Formalizations |
 | GitHub description | Machine-checked formalizations of Buddhist and comparative Asian logic in Lean 4 and Isabelle/HOL. |
 | Package version | `0.1.0` |
-| First GitHub software release | `v0.1.0` (in preparation) |
+| First GitHub software release | [`v0.1.0`](https://github.com/takuya50/buddhist-comparative-logic/releases/tag/v0.1.0) |
 
 The artifact is research software and a machine-checked formalization corpus.
 The Heart Sutra is one detailed textual case study within the wider library.
 The Isabelle-generated PDF is a technical reference and theory listing, not
 the research paper. This repository distributes the software corpus, its
 technical documentation, and reproducibility audits only. The separate English
-paper, Japanese version, and paper-specific evidence package are maintained
-outside this repository and are intended for publication only on figshare.
+paper, local non-public Japanese reference translation, and paper-specific
+evidence package are maintained outside this repository. The English paper is
+published separately on figshare under DOI
+[`10.6084/m9.figshare.33944383`](https://doi.org/10.6084/m9.figshare.33944383)
+(version 1 DOI `10.6084/m9.figshare.33944383.v1`).
 GitHub, Zenodo, and Software Heritage are intended for the software only.
-The software's Zenodo DOI `10.5281/zenodo.22851717` is reserved, but its draft
-deposit has not been published. No Software Heritage save has been submitted
-and no SWHID is recorded. The separate paper has not been published or assigned
-a DOI; its licence is separate from the software licences. The release metadata
-is prepared for 2026-09-20. The author is Nimble Ariake,
+The software archive is published on Zenodo under version DOI
+[`10.5281/zenodo.22851717`](https://doi.org/10.5281/zenodo.22851717) and concept
+DOI [`10.5281/zenodo.22851716`](https://doi.org/10.5281/zenodo.22851716).
+Software Heritage preserved the release as
+[`swh:1:snp:08238b89d09b2c352b96bb96df1eb6bc737ea811`](https://archive.softwareheritage.org/swh:1:snp:08238b89d09b2c352b96bb96df1eb6bc737ea811/).
+All release records are dated 2026-09-20. The author is Nimble Ariake,
 ORCID [0009-0008-2838-6626](https://orcid.org/0009-0008-2838-6626).
 [`CITATION.cff`](CITATION.cff) is software citation metadata and does not describe
 the paper. See [`docs/PUBLISHING.md`](docs/PUBLISHING.md) for the release

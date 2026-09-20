@@ -4,7 +4,7 @@
 
 Role: `record`
 
-Lifecycle: `draft`
+Lifecycle: `active`
 
 Reviewed: 2026-09-20
 
@@ -12,15 +12,20 @@ This repository contains research software, a machine-checked formalization
 corpus, technical documentation, and reproducibility audits. It does not
 contain the research paper or its publication package. The code repository,
 [takuya50/buddhist-comparative-logic](https://github.com/takuya50/buddhist-comparative-logic),
-is public. The first GitHub release and tag, `v0.1.0`, are in preparation and
-have not yet been created. Zenodo DOI `10.5281/zenodo.22851717` is reserved for
-the software, but the draft deposit is not published. No Software Heritage
-save has been submitted and no SWHID is recorded. The separately maintained
-paper has not been deposited or published and has no DOI.
+is public. GitHub release and tag [`v0.1.0`](https://github.com/takuya50/buddhist-comparative-logic/releases/tag/v0.1.0)
+were published from commit `e3fd4623cb918540adf48fbcf6e390aa36e71d82`.
+The software archive is published on Zenodo under version DOI
+`10.5281/zenodo.22851717` (concept DOI `10.5281/zenodo.22851716`). Software
+Heritage preserved snapshot
+`swh:1:snp:08238b89d09b2c352b96bb96df1eb6bc737ea811`. The separately maintained
+English paper is published only on figshare under DOI
+`10.6084/m9.figshare.33944383` (version 1 DOI
+`10.6084/m9.figshare.33944383.v1`); its Japanese reference translation
+remains local and non-public.
 
 ## 1. Fixed release identity
 
-The software and planned first release use these values:
+The software and first release use these values:
 
 | Field | Value |
 | --- | --- |
@@ -28,17 +33,15 @@ The software and planned first release use these values:
 | Display name | Buddhist and Comparative Asian Logic Formalizations |
 | GitHub description | Machine-checked formalizations of Buddhist and comparative Asian logic in Lean 4 and Isabelle/HOL. |
 | Package version | `0.1.0` |
-| First GitHub software release | `v0.1.0` (in preparation) |
+| First GitHub software release | [`v0.1.0`](https://github.com/takuya50/buddhist-comparative-logic/releases/tag/v0.1.0) |
 | Artifact type | Research software and machine-checked formalization corpus |
 | Included case study | The Heart Sutra formalization |
 | Generated PDF | Isabelle technical reference and theory listing, not a paper or preprint |
 
 `CITATION.cff` remains the GitHub software-citation record. Its software
 version is `0.1.0`; `repository-code` identifies the public repository, and
-`doi` records the reserved Zenodo identifier. `date-released` records the
-chosen release day, 2026-09-20; the tag is created after this candidate passes CI.
-A reserved DOI does not
-assert that a deposit is published. This is not paper metadata. The author is
+`doi` records the published Zenodo version DOI. `date-released` records the
+release day, 2026-09-20. This is not paper metadata. The author is
 Nimble Ariake, ORCID [0009-0008-2838-6626](https://orcid.org/0009-0008-2838-6626). DOIs in
 the source registry identify cited literature, not this software corpus.
 
@@ -156,21 +159,19 @@ changes. The completed CI receipt is recorded in [`STATUS.md`](STATUS.md).
 For the first release from the public repository:
 
 1. obtain maintainer approval for the software release and verify
-   `repository-code`, package version, and reserved DOI in `CITATION.cff`;
+   `repository-code`, package version, and DOI in `CITATION.cff`;
 2. on the chosen release day, add the actual `date-released`, validate the
    CFF file, commit the metadata, and wait for CI to pass again;
 3. create the `v0.1.0` tag and GitHub software release from that verified commit;
 4. confirm that the public README, source archive, citation metadata, release
    and experimental import boundaries, and CI result agree.
 
-Zenodo software archiving and Software Heritage preservation are separate
-software-only follow-up actions requiring maintainer approval. Publish the
-existing Zenodo draft only with the intended verified software payload; until
-then, continue to label its DOI as reserved and its deposit as unpublished.
-Inspect archive payloads for the same exclusions before submission, and
-record a Software Heritage identifier only after a successful save. Record only
-identifiers actually assigned to this software; do not use the paper's figshare DOI as a
-software DOI or claim an archive deposit before it exists.
+Zenodo software archiving and Software Heritage preservation were completed as
+separate software-only follow-up actions after maintainer approval. The Zenodo
+record contains only the verified software ZIP; the Software Heritage snapshot
+resolves the public repository including the release tag. Record only
+identifiers actually assigned to this software; do not use the paper's figshare
+DOI as a software DOI.
 
 The release notes must distinguish:
 
