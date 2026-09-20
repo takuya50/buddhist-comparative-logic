@@ -65,7 +65,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             texlive-luatex texlive-latex-extra texlive-fonts-recommended \
-            texlive-lang-japanese fonts-ipafont
+            texlive-lang-japanese texlive-plain-generic fonts-ipafont
+          # Isabelle's isabelle.sty requires ulem, supplied by plain-generic.
+          kpsewhich ulem.sty
 
       - name: Install Isabelle
         run: sh tools/install-isabelle.sh

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "started_utc": "2026-09-20T01:57:59.112132+00:00",
+  "started_utc": "2026-09-20T02:08:02.570014+00:00",
   "status": "PASS",
   "scope": "Representative dependencies and optional pinned-witness comparison; not a full build receipt.",
   "steps": [
@@ -37,7 +37,7 @@
       "command": "<isabelle-bin> process_theories -D verification -d isabelle -l Buddhist_Comparative_Logic -O -U Representative_Oracles",
       "exit_code": 0,
       "report": "audit/isabelle-oracles.txt",
-      "report_sha256": "d9704aa89ebec9c362bf6cef615fc2d1ea377424ff19781e43b9e8db731eab4f"
+      "report_sha256": "581fa2e5bfbad2f0fd527a410587c939899df38bd47664be3d2ef9b51dc10d90"
     },
     {
       "name": "Pinned CBETA witness comparison",
@@ -51,7 +51,7 @@
       "command": "python3 tools/make_snapshot.py",
       "exit_code": 0,
       "report": "audit/snapshot.txt",
-      "report_sha256": "2e48b73a6e61e16f313f72a3709c0b0ea9aebdcc30b07d9a33221e75853931b3"
+      "report_sha256": "742eb35d882b789a156b2ce59b23a8bce9f70f65629555f215a6a5fa45ebf262"
     }
   ],
   "cbeta": "PASS (pinned external XML; not redistributed)",
