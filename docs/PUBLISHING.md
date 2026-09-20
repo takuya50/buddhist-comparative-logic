@@ -12,29 +12,34 @@ This repository contains research software, a machine-checked formalization
 corpus, technical documentation, and reproducibility audits. It does not
 contain the research paper or its publication package. The code repository,
 [takuya50/buddhist-comparative-logic](https://github.com/takuya50/buddhist-comparative-logic),
-is private and access-restricted. No public release or tag has been issued.
-No software DOI has been assigned. The separately maintained paper has not
-been deposited or published and has no DOI.
+is public. The first GitHub release and tag, `v0.1.0`, are in preparation and
+have not yet been created. Zenodo DOI `10.5281/zenodo.22851717` is reserved for
+the software, but the draft deposit is not published. No Software Heritage
+save has been submitted and no SWHID is recorded. The separately maintained
+paper has not been deposited or published and has no DOI.
 
 ## 1. Fixed release identity
 
-The planned standalone release uses these values:
+The software and planned first release use these values:
 
-| Field | Planned value |
+| Field | Value |
 | --- | --- |
 | Repository slug | `buddhist-comparative-logic` |
 | Display name | Buddhist and Comparative Asian Logic Formalizations |
 | GitHub description | Machine-checked formalizations of Buddhist and comparative Asian logic in Lean 4 and Isabelle/HOL. |
-| First GitHub software release | `v0.1.0` |
+| Package version | `0.1.0` |
+| First GitHub software release | `v0.1.0` (in preparation) |
 | Artifact type | Research software and machine-checked formalization corpus |
 | Included case study | The Heart Sutra formalization |
 | Generated PDF | Isabelle technical reference and theory listing, not a paper or preprint |
 
 `CITATION.cff` remains the GitHub software-citation record. Its software
-version is `0.1.0`; `repository-code` identifies the private repository, while
-`date-released` remains absent because there is no release. It is not paper
-metadata. The author is Nimble Ariake,
-ORCID [0009-0008-2838-6626](https://orcid.org/0009-0008-2838-6626). DOIs in
+version is `0.1.0`; `repository-code` identifies the public repository, and
+`doi` records the reserved Zenodo identifier. `date-released` records the
+chosen release day, 2026-09-20; the tag is created after this candidate passes CI.
+A reserved DOI does not
+assert that a deposit is published. This is not paper metadata. The author is
+Nimble Ariake, ORCID [0009-0008-2838-6626](https://orcid.org/0009-0008-2838-6626). DOIs in
 the source registry identify cited literature, not this software corpus.
 
 The software version `0.1.0` is not a paper version. Paper metadata, its licence
@@ -75,10 +80,9 @@ figshare metadata, or paper-specific evidence package. A later link to an
 actually published paper may identify that separate artifact without bundling
 it or assigning its DOI to the software.
 
-Preserve the complete private paper workspace and delivered paper outputs
-outside the software Git history. Excluding them from this repository does
-not delete or relicense them. The Apache-2.0 audit code and CC0 audit
-records included here are described in [`AUDITS.md`](AUDITS.md); they do not
+Keep the separate paper package outside the software distribution. Excluding
+it from this repository does not delete or relicense it. The Apache-2.0 audit
+code and CC0 audit records included here are described in [`AUDITS.md`](AUDITS.md); they do not
 make the separate paper part of this distribution.
 
 ## 4. Run the release checks
@@ -118,20 +122,16 @@ Review the generated files after the checks:
 - the reproducibility audits in [`AUDITS.md`](AUDITS.md) pass;
 - `.github/workflows/verify.yml` matches the checked-in CI mirror.
 
-## 5. Prepare the first private commit
+## 5. Prepare a software-only release candidate
 
-The private GitHub repository `takuya50/buddhist-comparative-logic` has been
-created with the description recorded above. Confirm that it is private and
-has no unexpected history before the initial push.
+Prepare the release candidate from a clean checkout of the public repository.
+Track the Lean and Isabelle source trees, source registry, catalogue,
+technical documentation, verification inputs and audit records, CI, and the
+Apache-2.0/CC0-1.0 licensing files. Exclude the entire `paper/` directory and its separate
+`LICENSES/LicenseRef-Paper-Draft-No-License.txt` notice. The separate paper
+package is not a release payload.
 
-Prepare a clean software-only copy with no earlier Git history. Track the Lean
-and Isabelle source trees, source registry, catalogue, technical documentation,
-verification inputs and audit records, CI, and the Apache-2.0/CC0-1.0
-licensing files. Exclude the entire `paper/` directory and its separate
-`LICENSES/LicenseRef-Paper-Draft-No-License.txt` notice. Keep the original
-private paper package intact outside this copy.
-
-Before making the first commit:
+Before committing a release candidate:
 
 1. inspect the complete candidate file list, including untracked files, and
    reject any paper PDF, paper TeX source, Japanese paper, figshare metadata,
@@ -145,31 +145,31 @@ Before making the first commit:
    and software audit records belong in the software corpus;
 4. inspect `git check-ignore` and the staged file list, then run the fast
    checks in the clean copy;
-5. only when authorized, make the initial software-only commit and push it to
-   the private remote.
+5. commit the software-only candidate and run CI against that exact commit.
 
-Wait for `.github/workflows/verify.yml` to complete successfully in the private
-repository. Keep the repository private until the complete workflow is green.
-The sequence is first private commit, then private CI, and only afterward an
-approved public repository and release tag.
+Wait for `.github/workflows/verify.yml` to complete successfully before tagging
+the candidate. A successful run for an earlier commit does not verify later
+changes. The completed CI receipt is recorded in [`STATUS.md`](STATUS.md).
 
 ## 6. Publish the GitHub software release
 
-Once the private repository and its CI run exist:
+For the first release from the public repository:
 
-1. obtain explicit author approval for public visibility and a software
-   release, and verify the existing `repository-code` in `CITATION.cff`;
+1. obtain maintainer approval for the software release and verify
+   `repository-code`, package version, and reserved DOI in `CITATION.cff`;
 2. on the chosen release day, add the actual `date-released`, validate the
    CFF file, commit the metadata, and wait for CI to pass again;
-3. change the repository visibility from private to public;
-4. create the GitHub software release `v0.1.0` from that verified commit;
-5. confirm that the public README, source archive, citation metadata, release
+3. create the `v0.1.0` tag and GitHub software release from that verified commit;
+4. confirm that the public README, source archive, citation metadata, release
    and experimental import boundaries, and CI result agree.
 
 Zenodo software archiving and Software Heritage preservation are separate
-software-only follow-up actions requiring author approval. Inspect their
-payloads for the same exclusions before submission. Record only identifiers
-actually assigned to this software; do not use the paper's figshare DOI as a
+software-only follow-up actions requiring maintainer approval. Publish the
+existing Zenodo draft only with the intended verified software payload; until
+then, continue to label its DOI as reserved and its deposit as unpublished.
+Inspect archive payloads for the same exclusions before submission, and
+record a Software Heritage identifier only after a successful save. Record only
+identifiers actually assigned to this software; do not use the paper's figshare DOI as a
 software DOI or claim an archive deposit before it exists.
 
 The release notes must distinguish:

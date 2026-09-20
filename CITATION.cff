@@ -1,13 +1,14 @@
 # SPDX-License-Identifier: CC0-1.0
-# The version field records the planned first public release, v0.1.0; it does
-# not assert that the release exists. The repository is access-restricted;
-# no public release date is asserted.
-# DOI fields are intentionally absent from this software-release plan.
+# The source repository is public. The package version is 0.1.0; the GitHub
+# release and tag v0.1.0 are prepared for the release date recorded below.
+# The Zenodo DOI below is reserved; the draft deposit is not yet published.
 cff-version: 1.2.0
 message: "If you use this software corpus, please cite it as below."
 title: "Buddhist and Comparative Asian Logic Formalizations"
 type: software
 repository-code: "https://github.com/takuya50/buddhist-comparative-logic"
+doi: "10.5281/zenodo.22851717"
+date-released: "2026-09-20"
 license: Apache-2.0
 license-url: "https://www.apache.org/licenses/LICENSE-2.0"
 abstract: >-
@@ -16,8 +17,7 @@ abstract: >-
   Isabelle session formalizes a project-adopted 262-character received witness
   of the Xuanzang-attributed text, with manually documented statement-level
   correspondence to selected Lean 4 definitions and results, not a verified
-  cross-foundational translation. The code repository is currently private
-  and is not accessible to readers without authorization.
+  cross-foundational translation. The source repository is public.
   The shared logical layer compares classical logic, Belnap-Dunn
   first-degree entailment, and Priest's five-valued semantics. Lean extensions
   give bounded proof interfaces and countermodels for Madhyamaka, Buddhist

@@ -11,20 +11,21 @@ Full verification receipt: 2026-09-20 (Isabelle2025-2, the
 35-theory session, a 153-page technical-reference PDF, all 115 Lean modules,
 release guards, REUSE, and CFF validation).
 
-## Planned standalone software release
+## Software availability and release status
 
 The code repository is
 [takuya50/buddhist-comparative-logic](https://github.com/takuya50/buddhist-comparative-logic).
-It is **PRIVATE and access-restricted**; readers cannot view it without
-authorization. No public software release or release tag has been issued.
-The planned release identity is:
+It is **PUBLIC**. The first GitHub software release, `v0.1.0`, is in
+preparation; its release and tag have not yet been created.
+The software identity is:
 
-| Field | Planned value |
+| Field | Value |
 | --- | --- |
 | Repository slug | `buddhist-comparative-logic` |
 | Display name | Buddhist and Comparative Asian Logic Formalizations |
 | GitHub description | Machine-checked formalizations of Buddhist and comparative Asian logic in Lean 4 and Isabelle/HOL. |
-| First GitHub software release | `v0.1.0` |
+| Package version | `0.1.0` |
+| First GitHub software release | `v0.1.0` (in preparation) |
 
 The artifact is research software and a machine-checked formalization corpus.
 The Heart Sutra is one detailed textual case study within the wider library.
@@ -34,8 +35,11 @@ technical documentation, and reproducibility audits only. The separate English
 paper, Japanese version, and paper-specific evidence package are maintained
 outside this repository and are intended for publication only on figshare.
 GitHub, Zenodo, and Software Heritage are intended for the software only.
-No DOI has been assigned to this software or the separate paper, and no paper
-publication or software release date is asserted. The author is Nimble Ariake,
+The software's Zenodo DOI `10.5281/zenodo.22851717` is reserved, but its draft
+deposit has not been published. No Software Heritage save has been submitted
+and no SWHID is recorded. The separate paper has not been published or assigned
+a DOI; its licence is separate from the software licences. The release metadata
+is prepared for 2026-09-20. The author is Nimble Ariake,
 ORCID [0009-0008-2838-6626](https://orcid.org/0009-0008-2838-6626).
 [`CITATION.cff`](CITATION.cff) is software citation metadata and does not describe
 the paper. See [`docs/PUBLISHING.md`](docs/PUBLISHING.md) for the release

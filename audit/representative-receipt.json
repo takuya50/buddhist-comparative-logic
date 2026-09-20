@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "started_utc": "2026-09-20T02:08:02.570014+00:00",
+  "started_utc": "2026-09-20T02:34:13.426922+00:00",
   "status": "PASS",
   "scope": "Representative dependencies and optional pinned-witness comparison; not a full build receipt.",
   "steps": [
@@ -51,7 +51,7 @@
       "command": "python3 tools/make_snapshot.py",
       "exit_code": 0,
       "report": "audit/snapshot.txt",
-      "report_sha256": "742eb35d882b789a156b2ce59b23a8bce9f70f65629555f215a6a5fa45ebf262"
+      "report_sha256": "c6c7593d23d49a0946be6c45a56e905825ad4fddb1f3e90f3d24b30029360956"
     }
   ],
   "cbeta": "PASS (pinned external XML; not redistributed)",

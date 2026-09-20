@@ -4,7 +4,7 @@
 
 This file records module inclusion for the planned `v0.1.0` research-software
 release separately from proof status. It does not assert that the standalone
-release tag exists. The code repository is currently private. All Lean files in both sets compile under
+release tag exists. The code repository is public. All Lean files in both sets compile under
 the pinned toolchain and contain no admitted declarations. “Experimental”
 means that the mapping from formal predicates to historical passages still
 needs work; it does not mean that Lean accepted a weaker proof.
